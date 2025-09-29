@@ -3,3 +3,6 @@ pandas>=2.2,<3
 snowflake-connector-python[pandas]>=3.7,<4
 dbt-snowflake>=1.8,<1.9
 python-dotenv>=1.0,<2
+db-dtypes>=1.2,<2
+pyarrow>=12,<17
+google-cloud-bigquery-storage>=2.24,<3

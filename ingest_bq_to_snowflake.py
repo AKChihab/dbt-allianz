@@ -51,13 +51,6 @@ def get_snowflake_connection():
     )
     return conn
 
-# ---------- SQL file paths ----------
-BQ_USERS_SQL_PATH = PROJECT_ROOT / "sql" / "bq" / "users.sql"
-BQ_PRODUCTS_SQL_PATH = PROJECT_ROOT / "sql" / "bq" / "products.sql"
-BQ_ORDER_ITEMS_SQL_PATH = PROJECT_ROOT / "sql" / "bq" / "order_items.sql"
-SF_CREATE_RAW_TABLES_PATH = PROJECT_ROOT / "sql" / "sf" / "create_raw_tables.sql"
-
-
 def load_df(conn, df: pd.DataFrame, table_name: str):
     if df.empty:
         print(f"[WARN] Skipping {table_name}: DataFrame is empty.")
@@ -79,30 +72,28 @@ def load_df(conn, df: pd.DataFrame, table_name: str):
 
 def main():
     ap = argparse.ArgumentParser(description="Ingest BigQuery public data into Snowflake RAW schema")
-    ap.add_argument("--users-limit", type=int, default=10000)
-    ap.add_argument("--products-limit", type=int, default=10000)
-    ap.add_argument("--items-limit", type=int, default=20000)
+    ap.add_argument("--users-limit", type=int, default=10_000)
+    ap.add_argument("--products-limit", type=int, default=10_000)
+    ap.add_argument("--items-limit", type=int, default=20_000)
     ap.add_argument("--sql-dir", default="sql")
-    ap.add_argument("--dry-run", action="store_true", help="Only query BigQuery and print counts, do not load Snowflake")
+    ap.add_argument("--dry-run", action="store_true", help="Only query BigQuery and print counts")
     args = ap.parse_args()
 
-    PROJECT_ROOT = Path(__file__).resolve().parent
     sql_dir = Path(args.sql_dir)
-    bq_project = os.getenv("BQ_BILLING_PROJECT")
-    print(f"[BQ] Project: {bq_project}")
-    bq_location = os.getenv("BQ_LOCATION", "EU")
+    bq_project = os.getenv("BQ_BILLING_PROJECT")  # optional
+    print(f"[BQ] Project: {bq_project or '(ADC default)'}")
     bq = bigquery.Client(project=bq_project)
 
     print(f"[BQ] Querying users (limit={args.users_limit}) ...")
-    users = bq.query(read_sql(sql_dir/"bq/users.sql").format(limit=a.users_limit)).to_dataframe()
-    print(f"[BQ] Users rows: {len(users_df)}")
+    users = bq.query(read_sql(sql_dir/"bq/users.sql").format(limit=args.users_limit)).to_dataframe()
+    print(f"[BQ] Users rows: {len(users)}")
 
     print(f"[BQ] Querying products (limit={args.products_limit}) ...")
-    prods = bq.query(read_sql(sql_dir/"bq/products.sql").format(limit=a.products_limit)).to_dataframe()
-    print(f"[BQ] Products rows: {len(products_df)}")
+    prods = bq.query(read_sql(sql_dir/"bq/products.sql").format(limit=args.products_limit)).to_dataframe()
+    print(f"[BQ] Products rows: {len(prods)}")
 
     print(f"[BQ] Querying order_items (limit={args.items_limit}) ...")
-    items = bq.query(read_sql(sql_dir/"bq/order_items.sql").format(limit=a.items_limit)).to_dataframe()
+    items = bq.query(read_sql(sql_dir/"bq/order_items.sql").format(limit=args.items_limit)).to_dataframe()
     print(f"[BQ] Order items rows: {len(items)}")
 
     if args.dry_run:
@@ -113,7 +104,7 @@ def main():
     conn = get_snowflake_connection()
 
     print("[SF] Ensuring RAW tables exist …")
-    run_sql_file(conn, SF_CREATE_RAW_TABLES_PATH)
+    run_sql_file(conn, sql_dir / "sf" / "create_raw_tables.sql")
 
     # Ensure column order matches DDL
     print("[SF] Ensuring column order matches DDL")
@@ -135,3 +126,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
