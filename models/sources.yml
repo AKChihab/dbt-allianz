@@ -1,0 +1,10 @@
+version: 2
+sources:
+  - name: raw
+    database: ALLIANZ
+    schema: RAW
+    description: "Raw landed from BigQuery public dataset (thelook_ecommerce)"
+    tables:
+      - name: customers
+      - name: products
+      - name: order_items

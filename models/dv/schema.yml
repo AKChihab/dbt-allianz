@@ -1,0 +1,79 @@
+version: 2
+
+models:
+  - name: hub_customer
+    description: Data Vault hub for customers.
+    columns:
+      - name: hk_customer
+        tests: [not_null, unique]
+      - name: customer_bk
+        tests: [not_null]
+
+  - name: hub_product
+    description: Data Vault hub for products.
+    columns:
+      - name: hk_product
+        tests: [not_null, unique]
+      - name: product_bk
+        tests: [not_null]
+
+  - name: lnk_customer_product
+    description: Link between customer and product.
+    columns:
+      - name: hk_customer_product
+        tests: [not_null, unique]
+      - name: hk_customer
+        tests:
+          - not_null
+          - relationships:
+              to: ref('hub_customer')
+              field: hk_customer
+      - name: hk_product
+        tests:
+          - not_null
+          - relationships:
+              to: ref('hub_product')
+              field: hk_product
+
+  - name: sat_customer
+    description: Satellite for customer descriptive attributes.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [hk_customer, load_dts, hashdiff]
+    columns:
+      - name: hk_customer
+        tests:
+          - not_null
+          - relationships:
+              to: ref('hub_customer')
+              field: hk_customer
+      - name: hashdiff
+        tests: [not_null]
+      - name: load_dts
+        tests:
+          - not_null
+      - name: record_source
+        tests:
+          - not_null
+
+  - name: sat_product
+    description: Satellite for product descriptive attributes.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [hk_product, load_dts, hashdiff]
+    columns:
+      - name: hk_product
+        tests:
+          - not_null
+          - relationships:
+              to: ref('hub_product')
+              field: hk_product
+      - name: hashdiff
+        tests: [not_null]
+      - name: load_dts
+        tests:
+          - not_null
+      - name: record_source
+        tests:
+          - not_null
+

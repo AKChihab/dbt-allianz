@@ -1,0 +1,26 @@
+# models/staging/schema.yml
+version: 2
+models:
+  - name: stg_customers
+    description: "Clean customer BK + metadata"
+    columns:
+      - name: customer_bk
+        tests: [not_null]
+      - name: load_dts
+        tests: [not_null]
+  - name: stg_products
+    description: "Clean product BK + metadata"
+    columns:
+      - name: product_bk
+        tests: [not_null]
+      - name: load_dts
+        tests: [not_null]
+  - name: stg_order_items
+    description: "Orders grain for link (customer_bk, product_bk)"
+    columns:
+      - name: customer_bk
+        tests: [not_null]
+      - name: product_bk
+        tests: [not_null]
+      - name: load_dts
+        tests: [not_null]

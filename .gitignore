@@ -1,0 +1,22 @@
+# dbt build artifacts
+target/
+dbt_packages/
+logs/
+
+# Python
+.venv/
+__pycache__/
+
+# macOS
+.DS_Store
+
+# Local profiles (if used)
+profiles/*.yml
+
+.env
+
+.env
+.env.*
+*.json
+*.key
+.venv/
