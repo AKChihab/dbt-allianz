@@ -1,4 +1,4 @@
-with s as (select * from {{ source('raw','users') }})
+with s as (select * from {{ source('raw','customers') }})
 select
   upper(trim(cast(user_id as string))) as customer_bk,
   first_name, last_name, email, created_at,

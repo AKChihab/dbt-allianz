@@ -20,5 +20,3 @@ from o
 join c using (customer_bk)
 join p using (product_bk)
 group by 1,2,3,4,5
-
-
