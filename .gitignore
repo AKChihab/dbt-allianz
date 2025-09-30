@@ -20,3 +20,5 @@ profiles/*.yml
 *.json
 *.key
 .venv/
+
+#prez/
