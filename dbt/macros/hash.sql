@@ -6,7 +6,7 @@
 {%- endmacro %}
 
 {% macro hashkey(cols) -%}
-  TO_HEX(SHA2({{ concat_ws_snowflake(cols) }}, 256))
+  HEX_ENCODE(SHA2({{ concat_ws_snowflake(cols) }}, 256))
 {%- endmacro %}
 
 {% macro hashdiff(cols) -%}

@@ -18,7 +18,7 @@ models:
         tests: [not_null]
 
   - name: link_customer_product
-    description: "Link: customer ↔ product (via orders)"
+    description: "Link: customer -> product"
     columns:
       - name: l_customer_product_pk
         tests: [not_null, unique]
@@ -26,20 +26,23 @@ models:
         tests:
           - not_null
           - fk_ref:
-              parent_model: ref('hub_customer')
-              pk_column: h_customer_pk
+              arguments:
+                parent_model: "{{ ref('hub_customer') }}"
+                pk_column: h_customer_pk
       - name: h_product_pk
         tests:
           - not_null
           - fk_ref:
-              parent_model: ref('hub_product')
-              pk_column: h_product_pk
+              arguments:
+                parent_model: "{{ ref('hub_product') }}"
+                pk_column: h_product_pk
 
   - name: sat_customer
     description: "Satellite with customer attributes"
     tests:
       - dbt_utils.unique_combination_of_columns:
-          combination_of_columns: [h_customer_pk, load_dts]
+          arguments:
+            combination_of_columns: [h_customer_pk, load_dts]
     columns:
       - name: h_customer_pk
         tests: [not_null]
@@ -52,7 +55,8 @@ models:
     description: "Satellite with product attributes"
     tests:
       - dbt_utils.unique_combination_of_columns:
-          combination_of_columns: [h_product_pk, load_dts]
+          arguments:
+            combination_of_columns: [h_product_pk, load_dts]
     columns:
       - name: h_product_pk
         tests: [not_null]

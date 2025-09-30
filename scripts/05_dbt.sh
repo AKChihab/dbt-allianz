@@ -11,6 +11,10 @@ fi
 
 source .venv/bin/activate
 export DBT_PROFILES_DIR="${DBT_PROFILES_DIR:-$(pwd)/profiles}"
-mkdir -p logs
-dbt debug
-dbt build --debug 2>&1 | tee "logs/build_$(date +%Y%m%d_%H%M%S).log"
+export DBT_SEND_ANONYMOUS_USAGE_STATS=false
+
+cd dbt
+dbt deps | cat
+mkdir -p ../logs
+dbt debug --profiles-dir "${DBT_PROFILES_DIR}" | cat
+dbt build --debug --profiles-dir "${DBT_PROFILES_DIR}" 2>&1 | tee "../logs/build_$(date +%Y%m%d_%H%M%S).log"

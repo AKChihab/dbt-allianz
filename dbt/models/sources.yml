@@ -5,6 +5,6 @@ sources:
     schema: RAW
     description: "Raw landed from BigQuery public dataset (thelook_ecommerce)"
     tables:
-      - name: customers
+      - name: users
       - name: products
       - name: order_items

@@ -2,7 +2,7 @@ name: allianz_dv_snowflake
 version: 1.0.0
 config-version: 2
 
-profile: allianz
+profile: allianz_dv_snowflake
 
 model-paths: ["models"]
 macro-paths: ["macros"]
@@ -13,7 +13,7 @@ packages-install-path: dbt_packages
 clean-targets: ["target", "dbt_packages", "logs"]
 
 models:
-  allianz_dv:
+  allianz_dv_snowflake:
     +materialized: table
 
     staging:
@@ -23,6 +23,7 @@ models:
 
     dv:
       +schema: DV
+      +materialized: table
       +tags: ["dv"]
 
       hubs:
