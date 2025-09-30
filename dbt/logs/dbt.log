@@ -1,0 +1,1659 @@
+[0m20:18:00.463323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106671cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066f2f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066f38d0>]}
+
+
+============================== 20:18:00.465231 | 855467bc-3990-4ee2-b6e4-118ddc05ab67 ==============================
+[0m20:18:00.465231 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:18:00.465492 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'warn_error': 'None', 'log_format': 'default', 'log_cache_events': 'False', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'cache_selected_only': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'partial_parse': 'True', 'quiet': 'False', 'fail_fast': 'False', 'write_json': 'True', 'no_print': 'None', 'use_colors': 'True', 'empty': 'None'}
+[0m20:18:00.511896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '855467bc-3990-4ee2-b6e4-118ddc05ab67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10692d1d0>]}
+[0m20:18:00.518451 [debug] [MainThread]: Set downloads directory='/var/folders/g0/f73m7g1j4b91c_67g9j61wlr0000gq/T/dbt-downloads-1t_fze_w'
+[0m20:18:00.518623 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m20:18:00.619481 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m20:18:00.620541 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m20:18:00.683031 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m20:18:00.686530 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m20:18:00.960308 [info ] [MainThread]: Installed from version 1.3.1
+[0m20:18:00.960655 [info ] [MainThread]: Up to date!
+[0m20:18:00.960861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '855467bc-3990-4ee2-b6e4-118ddc05ab67', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10555c710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10560a810>]}
+[0m20:18:00.962284 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.5375002, "process_in_blocks": "0", "process_kernel_time": 0.10254, "process_mem_max_rss": "116703232", "process_out_blocks": "0", "process_user_time": 0.570494}
+[0m20:18:00.962524 [debug] [MainThread]: Command `dbt deps` succeeded at 20:18:00.962480 after 0.54 seconds
+[0m20:18:00.962701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10680be50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100bc6c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100bc6f10>]}
+[0m20:18:00.962863 [debug] [MainThread]: Flushing usage events
+[0m20:18:01.322837 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:18:19.910592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e71290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111efaa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111efb450>]}
+
+
+============================== 20:18:19.913072 | 1b12f7c1-747b-4f53-b5c7-53e3cef0d071 ==============================
+[0m20:18:19.913072 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:18:19.913330 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'target_path': 'None', 'introspect': 'True', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'warn_error': 'None', 'no_print': 'None', 'printer_width': '80', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'write_json': 'True', 'invocation_command': 'dbt deps', 'indirect_selection': 'eager', 'version_check': 'True', 'empty': 'None', 'partial_parse': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'use_experimental_parser': 'False', 'debug': 'False'}
+[0m20:18:19.959159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1b12f7c1-747b-4f53-b5c7-53e3cef0d071', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11222cad0>]}
+[0m20:18:19.975302 [debug] [MainThread]: Set downloads directory='/var/folders/g0/f73m7g1j4b91c_67g9j61wlr0000gq/T/dbt-downloads-3hdgc_h2'
+[0m20:18:19.975506 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m20:18:20.022059 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m20:18:20.022918 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m20:18:20.066797 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m20:18:20.069620 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m20:18:20.339014 [info ] [MainThread]: Installed from version 1.3.1
+[0m20:18:20.339286 [info ] [MainThread]: Up to date!
+[0m20:18:20.339504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1b12f7c1-747b-4f53-b5c7-53e3cef0d071', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072f6250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f79f50>]}
+[0m20:18:20.341036 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.46885082, "process_in_blocks": "0", "process_kernel_time": 0.118105, "process_mem_max_rss": "117604352", "process_out_blocks": "0", "process_user_time": 0.572178}
+[0m20:18:20.341300 [debug] [MainThread]: Command `dbt deps` succeeded at 20:18:20.341250 after 0.47 seconds
+[0m20:18:20.341493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f0b910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f0be90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f71ad0>]}
+[0m20:18:20.341673 [debug] [MainThread]: Flushing usage events
+[0m20:18:20.705316 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:18:21.371404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107372c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073d5bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073f7b10>]}
+
+
+============================== 20:18:21.373287 | ec739f08-a9d5-4168-a1c0-66e3e2fce03e ==============================
+[0m20:18:21.373287 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:18:21.373564 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'quiet': 'False', 'use_colors': 'True', 'version_check': 'True', 'debug': 'False', 'introspect': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'warn_error': 'None', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'invocation_command': 'dbt debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'write_json': 'True', 'log_format': 'default', 'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs'}
+[0m20:18:21.377422 [info ] [MainThread]: dbt version: 1.10.13
+[0m20:18:21.377599 [info ] [MainThread]: python version: 3.11.9
+[0m20:18:21.377755 [info ] [MainThread]: python path: /Users/Datachain/Desktop/IAM/Github/dbt-allianz/.venv/bin/python3
+[0m20:18:21.378077 [info ] [MainThread]: os info: macOS-15.6.1-arm64-i386-64bit
+[0m20:18:21.673389 [info ] [MainThread]: Using profiles dir at /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles
+[0m20:18:21.673644 [info ] [MainThread]: Using profiles.yml file at /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles/profiles.yml
+[0m20:18:21.673801 [info ] [MainThread]: Using dbt_project.yml file at /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/dbt_project.yml
+[0m20:18:21.674013 [info ] [MainThread]: adapter type: snowflake
+[0m20:18:21.674139 [info ] [MainThread]: adapter version: 1.8.4
+[0m20:18:21.747561 [info ] [MainThread]: Configuration:
+[0m20:18:21.747818 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:18:21.747972 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:18:21.748109 [info ] [MainThread]: Required dependencies:
+[0m20:18:21.748278 [debug] [MainThread]: Executing "git --help"
+[0m20:18:21.780700 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:18:21.781165 [debug] [MainThread]: STDERR: "b''"
+[0m20:18:21.781317 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:18:21.781465 [info ] [MainThread]: Connection:
+[0m20:18:21.781630 [info ] [MainThread]:   account: frfstss-rc57380
+[0m20:18:21.781752 [info ] [MainThread]:   user: DATACHAIN
+[0m20:18:21.781891 [info ] [MainThread]:   database: ALLIANZ
+[0m20:18:21.782012 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m20:18:21.782134 [info ] [MainThread]:   role: DEV_ROLE
+[0m20:18:21.782252 [info ] [MainThread]:   schema: DV
+[0m20:18:21.782371 [info ] [MainThread]:   authenticator: snowflake
+[0m20:18:21.782497 [info ] [MainThread]:   oauth_client_id: None
+[0m20:18:21.782615 [info ] [MainThread]:   query_tag: allianz_dbt
+[0m20:18:21.782737 [info ] [MainThread]:   client_session_keep_alive: False
+[0m20:18:21.782856 [info ] [MainThread]:   host: None
+[0m20:18:21.782973 [info ] [MainThread]:   port: None
+[0m20:18:21.783099 [info ] [MainThread]:   proxy_host: None
+[0m20:18:21.783218 [info ] [MainThread]:   proxy_port: None
+[0m20:18:21.783335 [info ] [MainThread]:   protocol: None
+[0m20:18:21.783450 [info ] [MainThread]:   connect_retries: 1
+[0m20:18:21.783568 [info ] [MainThread]:   connect_timeout: None
+[0m20:18:21.783683 [info ] [MainThread]:   retry_on_database_errors: False
+[0m20:18:21.783799 [info ] [MainThread]:   retry_all: False
+[0m20:18:21.783915 [info ] [MainThread]:   insecure_mode: False
+[0m20:18:21.784028 [info ] [MainThread]:   reuse_connections: None
+[0m20:18:21.784307 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m20:18:21.841696 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m20:18:21.842163 [debug] [MainThread]: Using snowflake connection "debug"
+[0m20:18:21.842319 [debug] [MainThread]: On debug: select 1 as id
+[0m20:18:21.842454 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:18:22.405745 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.563 seconds
+[0m20:18:22.407047 [debug] [MainThread]: On debug: Close
+[0m20:18:22.487869 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:18:22.488795 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:18:22.494856 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.1614692, "process_in_blocks": "0", "process_kernel_time": 0.175369, "process_mem_max_rss": "223117312", "process_out_blocks": "0", "process_user_time": 0.913701}
+[0m20:18:22.495743 [debug] [MainThread]: Command `dbt debug` succeeded at 20:18:22.495603 after 1.16 seconds
+[0m20:18:22.496134 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:18:22.496948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073680d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107363ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102b92dd0>]}
+[0m20:18:22.497494 [debug] [MainThread]: Flushing usage events
+[0m20:18:22.878398 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:18:23.615245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107870790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078e3710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078e3f90>]}
+
+
+============================== 20:18:23.617119 | 0daf6e0e-60c1-41ae-8b7b-26d3732edc7a ==============================
+[0m20:18:23.617119 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:18:23.617379 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_format': 'default', 'write_json': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'version_check': 'True', 'use_colors': 'True', 'empty': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'static_parser': 'True', 'invocation_command': 'dbt build --debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'introspect': 'True', 'partial_parse': 'True', 'printer_width': '80', 'debug': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False'}
+[0m20:18:23.967225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078cc410>]}
+[0m20:18:23.990445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106723950>]}
+[0m20:18:23.990942 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m20:18:24.051661 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m20:18:24.052093 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:18:24.052278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107125890>]}
+[0m20:18:24.521692 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'link_customer_product' in the 'models' section of file 'models/dv/schema.yml'
+[0m20:18:24.550883 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_l_customer_product_pk.9faf86272b' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:18:24.551173 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.unique_link_customer_product_l_customer_product_pk.17b1e4497a' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:18:24.551342 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_h_customer_pk.54b9e1521a' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:18:24.551507 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.fk_ref_link_customer_product_h_customer_pk___ref_hub_customer___h_customer_pk.491f37f77f' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:18:24.551666 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_h_product_pk.1b3d1c3ea9' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:18:24.551830 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.fk_ref_link_customer_product_h_product_pk___ref_hub_product___h_product_pk.ec54dcabfd' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:18:24.588075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118820dd0>]}
+[0m20:18:24.661479 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m20:18:24.662373 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m20:18:24.673134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11859f310>]}
+[0m20:18:24.673417 [info ] [MainThread]: Found 8 models, 21 data tests, 3 sources, 584 macros
+[0m20:18:24.674775 [info ] [MainThread]: 
+[0m20:18:24.674936 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:18:24.675061 [info ] [MainThread]: 
+[0m20:18:24.675282 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:18:24.677183 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ALLIANZ'
+[0m20:18:24.677432 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ALLIANZ'
+[0m20:18:24.682799 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ"
+[0m20:18:24.683975 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ"
+[0m20:18:24.684159 [debug] [ThreadPool]: On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m20:18:24.684307 [debug] [ThreadPool]: On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m20:18:24.684454 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:18:24.684612 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:18:25.029422 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.345 seconds
+[0m20:18:25.032421 [debug] [ThreadPool]: On list_ALLIANZ: Close
+[0m20:18:25.139142 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.454 seconds
+[0m20:18:25.141606 [debug] [ThreadPool]: On list_ALLIANZ: Close
+[0m20:18:25.223164 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ALLIANZ, now create_ALLIANZ_DV_DV)
+[0m20:18:25.223508 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ALLIANZ, now create_ALLIANZ_DV_STAGING)
+[0m20:18:25.223880 [debug] [ThreadPool]: Creating schema "database: "ALLIANZ"
+schema: "DV_DV"
+"
+[0m20:18:25.224192 [debug] [ThreadPool]: Creating schema "database: "ALLIANZ"
+schema: "DV_STAGING"
+"
+[0m20:18:25.226948 [debug] [ThreadPool]: Using snowflake connection "create_ALLIANZ_DV_DV"
+[0m20:18:25.228139 [debug] [ThreadPool]: Using snowflake connection "create_ALLIANZ_DV_STAGING"
+[0m20:18:25.228387 [debug] [ThreadPool]: On create_ALLIANZ_DV_DV: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "create_ALLIANZ_DV_DV"} */
+create schema if not exists ALLIANZ.DV_DV
+[0m20:18:25.229105 [debug] [ThreadPool]: On create_ALLIANZ_DV_STAGING: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "create_ALLIANZ_DV_STAGING"} */
+create schema if not exists ALLIANZ.DV_STAGING
+[0m20:18:25.229339 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:18:25.229575 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:18:25.671932 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bf66ea-0000-69ee-0000-77790001f172
+[0m20:18:25.672934 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bf66ea-0000-69ee-0000-77790001f176
+[0m20:18:25.673639 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'ALLIANZ'.
+[0m20:18:25.674542 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'ALLIANZ'.
+[0m20:18:25.675178 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m20:18:25.675805 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m20:18:25.676293 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m20:18:25.676669 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m20:18:25.677064 [debug] [ThreadPool]: On create_ALLIANZ_DV_DV: Close
+[0m20:18:25.677439 [debug] [ThreadPool]: On create_ALLIANZ_DV_STAGING: Close
+[0m20:18:25.761965 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:18:25.762425 [debug] [MainThread]: Connection 'create_ALLIANZ_DV_DV' was properly closed.
+[0m20:18:25.762686 [debug] [MainThread]: Connection 'create_ALLIANZ_DV_STAGING' was properly closed.
+[0m20:18:25.762981 [info ] [MainThread]: 
+[0m20:18:25.763239 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.09 seconds (1.09s).
+[0m20:18:25.763659 [error] [MainThread]: Encountered an error:
+Database Error
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on database 'ALLIANZ'.
+[0m20:18:25.767009 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 2.1905801, "process_in_blocks": "0", "process_kernel_time": 0.224624, "process_mem_max_rss": "241745920", "process_out_blocks": "0", "process_user_time": 1.686616}
+[0m20:18:25.767391 [debug] [MainThread]: Command `dbt build` failed at 20:18:25.767323 after 2.19 seconds
+[0m20:18:25.768072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10751f150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107863e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102eac650>]}
+[0m20:18:25.768480 [debug] [MainThread]: Flushing usage events
+[0m20:18:26.142007 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:19:23.139976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c36b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c9a5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cbfd90>]}
+
+
+============================== 20:19:23.141770 | 0a9c247e-f3d0-416e-afa6-9ad0446aa7aa ==============================
+[0m20:19:23.141770 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:19:23.142018 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'cache_selected_only': 'False', 'empty': 'None', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'quiet': 'False', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'indirect_selection': 'eager', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'version_check': 'True', 'warn_error': 'None', 'log_format': 'default', 'partial_parse': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'log_cache_events': 'False', 'use_colors': 'True'}
+[0m20:19:23.188773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0a9c247e-f3d0-416e-afa6-9ad0446aa7aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c9a910>]}
+[0m20:19:23.205259 [debug] [MainThread]: Set downloads directory='/var/folders/g0/f73m7g1j4b91c_67g9j61wlr0000gq/T/dbt-downloads-845y4l3_'
+[0m20:19:23.205475 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m20:19:23.299629 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m20:19:23.300647 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m20:19:23.350311 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m20:19:23.353246 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m20:19:23.619886 [info ] [MainThread]: Installed from version 1.3.1
+[0m20:19:23.620121 [info ] [MainThread]: Up to date!
+[0m20:19:23.620300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '0a9c247e-f3d0-416e-afa6-9ad0446aa7aa', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1026d7910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e08250>]}
+[0m20:19:23.621624 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.51990736, "process_in_blocks": "0", "process_kernel_time": 0.108572, "process_mem_max_rss": "117161984", "process_out_blocks": "0", "process_user_time": 0.56348}
+[0m20:19:23.621845 [debug] [MainThread]: Command `dbt deps` succeeded at 20:19:23.621799 after 0.52 seconds
+[0m20:19:23.621999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ccb310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100612bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100612e50>]}
+[0m20:19:23.622137 [debug] [MainThread]: Flushing usage events
+[0m20:19:24.041457 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:19:24.727577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fa72c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11faf2f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11faf3890>]}
+
+
+============================== 20:19:24.729517 | 2fd2251b-7128-4ece-b580-53a43eecbfbd ==============================
+[0m20:19:24.729517 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:19:24.729786 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'quiet': 'False', 'write_json': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'printer_width': '80', 'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'partial_parse': 'True', 'log_cache_events': 'False', 'invocation_command': 'dbt debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'use_experimental_parser': 'False', 'target_path': 'None', 'debug': 'False'}
+[0m20:19:24.733669 [info ] [MainThread]: dbt version: 1.10.13
+[0m20:19:24.733851 [info ] [MainThread]: python version: 3.11.9
+[0m20:19:24.734000 [info ] [MainThread]: python path: /Users/Datachain/Desktop/IAM/Github/dbt-allianz/.venv/bin/python3
+[0m20:19:24.734132 [info ] [MainThread]: os info: macOS-15.6.1-arm64-i386-64bit
+[0m20:19:25.056183 [info ] [MainThread]: Using profiles dir at /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles
+[0m20:19:25.056437 [info ] [MainThread]: Using profiles.yml file at /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles/profiles.yml
+[0m20:19:25.056583 [info ] [MainThread]: Using dbt_project.yml file at /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/dbt_project.yml
+[0m20:19:25.056810 [info ] [MainThread]: adapter type: snowflake
+[0m20:19:25.056937 [info ] [MainThread]: adapter version: 1.8.4
+[0m20:19:25.126773 [info ] [MainThread]: Configuration:
+[0m20:19:25.127035 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:19:25.127199 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:19:25.127329 [info ] [MainThread]: Required dependencies:
+[0m20:19:25.127516 [debug] [MainThread]: Executing "git --help"
+[0m20:19:25.160990 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:19:25.161435 [debug] [MainThread]: STDERR: "b''"
+[0m20:19:25.161609 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:19:25.161765 [info ] [MainThread]: Connection:
+[0m20:19:25.161935 [info ] [MainThread]:   account: frfstss-rc57380
+[0m20:19:25.162061 [info ] [MainThread]:   user: DATACHAIN
+[0m20:19:25.162195 [info ] [MainThread]:   database: ALLIANZ
+[0m20:19:25.162316 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m20:19:25.162449 [info ] [MainThread]:   role: DEV_ROLE
+[0m20:19:25.162572 [info ] [MainThread]:   schema: DV
+[0m20:19:25.162697 [info ] [MainThread]:   authenticator: snowflake
+[0m20:19:25.162820 [info ] [MainThread]:   oauth_client_id: None
+[0m20:19:25.162946 [info ] [MainThread]:   query_tag: allianz_dbt
+[0m20:19:25.163068 [info ] [MainThread]:   client_session_keep_alive: False
+[0m20:19:25.163188 [info ] [MainThread]:   host: None
+[0m20:19:25.163317 [info ] [MainThread]:   port: None
+[0m20:19:25.163447 [info ] [MainThread]:   proxy_host: None
+[0m20:19:25.163644 [info ] [MainThread]:   proxy_port: None
+[0m20:19:25.163965 [info ] [MainThread]:   protocol: None
+[0m20:19:25.164224 [info ] [MainThread]:   connect_retries: 1
+[0m20:19:25.164439 [info ] [MainThread]:   connect_timeout: None
+[0m20:19:25.164574 [info ] [MainThread]:   retry_on_database_errors: False
+[0m20:19:25.164709 [info ] [MainThread]:   retry_all: False
+[0m20:19:25.164835 [info ] [MainThread]:   insecure_mode: False
+[0m20:19:25.164968 [info ] [MainThread]:   reuse_connections: None
+[0m20:19:25.165311 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m20:19:25.226401 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m20:19:25.226901 [debug] [MainThread]: Using snowflake connection "debug"
+[0m20:19:25.227053 [debug] [MainThread]: On debug: select 1 as id
+[0m20:19:25.227184 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:19:25.623503 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.396 seconds
+[0m20:19:25.624237 [debug] [MainThread]: On debug: Close
+[0m20:19:25.691245 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:19:25.691572 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:19:25.693817 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.0047954, "process_in_blocks": "0", "process_kernel_time": 0.17913, "process_mem_max_rss": "223625216", "process_out_blocks": "0", "process_user_time": 0.922055}
+[0m20:19:25.694082 [debug] [MainThread]: Command `dbt debug` succeeded at 20:19:25.694032 after 1.01 seconds
+[0m20:19:25.694271 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:19:25.694450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fa63d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10522ee10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10522ebd0>]}
+[0m20:19:25.694669 [debug] [MainThread]: Flushing usage events
+[0m20:19:26.063716 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:19:26.858807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11866be50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1186d7250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118671610>]}
+
+
+============================== 20:19:26.861196 | 92fb4e11-f4e7-4fee-9c3c-f76dce61bf85 ==============================
+[0m20:19:26.861196 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:19:26.861461 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'fail_fast': 'False', 'printer_width': '80', 'target_path': 'None', 'version_check': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'empty': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'indirect_selection': 'eager', 'log_format': 'default', 'quiet': 'False', 'warn_error': 'None', 'debug': 'True', 'invocation_command': 'dbt build --debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'introspect': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'use_experimental_parser': 'False'}
+[0m20:19:27.255981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '92fb4e11-f4e7-4fee-9c3c-f76dce61bf85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d37a650>]}
+[0m20:19:27.278455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '92fb4e11-f4e7-4fee-9c3c-f76dce61bf85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106327a90>]}
+[0m20:19:27.278950 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m20:19:27.338723 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m20:19:27.395252 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:19:27.395536 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:19:27.416944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '92fb4e11-f4e7-4fee-9c3c-f76dce61bf85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f9f4f90>]}
+[0m20:19:27.457755 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m20:19:27.458854 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m20:19:27.470132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '92fb4e11-f4e7-4fee-9c3c-f76dce61bf85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fe43fd0>]}
+[0m20:19:27.470421 [info ] [MainThread]: Found 8 models, 21 data tests, 3 sources, 584 macros
+[0m20:19:27.472517 [info ] [MainThread]: 
+[0m20:19:27.472766 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:19:27.472908 [info ] [MainThread]: 
+[0m20:19:27.473157 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:19:27.475576 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ALLIANZ'
+[0m20:19:27.475892 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ALLIANZ'
+[0m20:19:27.482213 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ"
+[0m20:19:27.483226 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ"
+[0m20:19:27.483402 [debug] [ThreadPool]: On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m20:19:27.483558 [debug] [ThreadPool]: On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m20:19:27.483700 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:19:27.483834 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:19:27.810431 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.327 seconds
+[0m20:19:27.811666 [debug] [ThreadPool]: On list_ALLIANZ: Close
+[0m20:19:27.978010 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.494 seconds
+[0m20:19:27.980730 [debug] [ThreadPool]: On list_ALLIANZ: Close
+[0m20:19:28.055584 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ALLIANZ, now create_ALLIANZ_DV_STAGING)
+[0m20:19:28.056135 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ALLIANZ, now create_ALLIANZ_DV_DV)
+[0m20:19:28.056660 [debug] [ThreadPool]: Creating schema "database: "ALLIANZ"
+schema: "DV_STAGING"
+"
+[0m20:19:28.057133 [debug] [ThreadPool]: Creating schema "database: "ALLIANZ"
+schema: "DV_DV"
+"
+[0m20:19:28.061801 [debug] [ThreadPool]: Using snowflake connection "create_ALLIANZ_DV_STAGING"
+[0m20:19:28.063850 [debug] [ThreadPool]: Using snowflake connection "create_ALLIANZ_DV_DV"
+[0m20:19:28.064278 [debug] [ThreadPool]: On create_ALLIANZ_DV_STAGING: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "create_ALLIANZ_DV_STAGING"} */
+create schema if not exists ALLIANZ.DV_STAGING
+[0m20:19:28.064608 [debug] [ThreadPool]: On create_ALLIANZ_DV_DV: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "create_ALLIANZ_DV_DV"} */
+create schema if not exists ALLIANZ.DV_DV
+[0m20:19:28.064891 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:19:28.065154 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:19:28.528417 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bf66eb-0000-69f2-0000-7779000200ce
+[0m20:19:28.529404 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'ALLIANZ'.
+[0m20:19:28.530344 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01bf66eb-0000-698f-0000-777900014246
+[0m20:19:28.531127 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m20:19:28.531896 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'ALLIANZ'.
+[0m20:19:28.532541 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m20:19:28.533167 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m20:19:28.533620 [debug] [ThreadPool]: On create_ALLIANZ_DV_STAGING: Close
+[0m20:19:28.533997 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m20:19:28.535960 [debug] [ThreadPool]: On create_ALLIANZ_DV_DV: Close
+[0m20:19:28.609118 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:19:28.609549 [debug] [MainThread]: Connection 'create_ALLIANZ_DV_DV' was properly closed.
+[0m20:19:28.609830 [debug] [MainThread]: Connection 'create_ALLIANZ_DV_STAGING' was properly closed.
+[0m20:19:28.610131 [info ] [MainThread]: 
+[0m20:19:28.610428 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.14 seconds (1.14s).
+[0m20:19:28.610874 [error] [MainThread]: Encountered an error:
+Database Error
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on database 'ALLIANZ'.
+[0m20:19:28.614435 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 1.8036282, "process_in_blocks": "0", "process_kernel_time": 0.268108, "process_mem_max_rss": "241467392", "process_out_blocks": "0", "process_user_time": 1.28473}
+[0m20:19:28.614847 [debug] [MainThread]: Command `dbt build` failed at 20:19:28.614773 after 1.80 seconds
+[0m20:19:28.615419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118668050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12e653e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fe791d0>]}
+[0m20:19:28.615758 [debug] [MainThread]: Flushing usage events
+[0m20:19:28.996319 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:24:02.218221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107271610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072faa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072fb3d0>]}
+
+
+============================== 20:24:02.220265 | 4689ab5d-a4e5-4aea-84e1-9b5114f7ae61 ==============================
+[0m20:24:02.220265 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:24:02.220533 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt deps', 'quiet': 'False', 'use_colors': 'True', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'fail_fast': 'False', 'no_print': 'None', 'warn_error': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False', 'empty': 'None', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'static_parser': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'indirect_selection': 'eager', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'introspect': 'True'}
+[0m20:24:02.272175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4689ab5d-a4e5-4aea-84e1-9b5114f7ae61', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10332c310>]}
+[0m20:24:02.289041 [debug] [MainThread]: Set downloads directory='/var/folders/g0/f73m7g1j4b91c_67g9j61wlr0000gq/T/dbt-downloads-a7ztaaes'
+[0m20:24:02.289303 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m20:24:02.381967 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m20:24:02.382932 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m20:24:02.436726 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m20:24:02.439577 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m20:24:02.741566 [info ] [MainThread]: Installed from version 1.3.1
+[0m20:24:02.741802 [info ] [MainThread]: Up to date!
+[0m20:24:02.741988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '4689ab5d-a4e5-4aea-84e1-9b5114f7ae61', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10565e250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104006110>]}
+[0m20:24:02.743297 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.5654082, "process_in_blocks": "0", "process_kernel_time": 0.111775, "process_mem_max_rss": "118243328", "process_out_blocks": "0", "process_user_time": 0.582044}
+[0m20:24:02.743522 [debug] [MainThread]: Command `dbt deps` succeeded at 20:24:02.743478 after 0.57 seconds
+[0m20:24:02.743689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107407790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107407d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107188f50>]}
+[0m20:24:02.743842 [debug] [MainThread]: Flushing usage events
+[0m20:24:03.149895 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:24:03.825614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108371390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108007ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083f3ad0>]}
+
+
+============================== 20:24:03.827511 | 407db45e-9819-4ff1-a290-006fbece4f45 ==============================
+[0m20:24:03.827511 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:24:03.827788 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'partial_parse': 'True', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'write_json': 'True', 'debug': 'False', 'version_check': 'True', 'introspect': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'quiet': 'False', 'invocation_command': 'dbt debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'warn_error': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'empty': 'None', 'use_colors': 'True', 'target_path': 'None'}
+[0m20:24:03.831483 [info ] [MainThread]: dbt version: 1.10.13
+[0m20:24:03.831654 [info ] [MainThread]: python version: 3.11.9
+[0m20:24:03.831807 [info ] [MainThread]: python path: /Users/Datachain/Desktop/IAM/Github/dbt-allianz/.venv/bin/python3
+[0m20:24:03.831930 [info ] [MainThread]: os info: macOS-15.6.1-arm64-i386-64bit
+[0m20:24:04.111717 [info ] [MainThread]: Using profiles dir at /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles
+[0m20:24:04.111964 [info ] [MainThread]: Using profiles.yml file at /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles/profiles.yml
+[0m20:24:04.112107 [info ] [MainThread]: Using dbt_project.yml file at /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/dbt_project.yml
+[0m20:24:04.112316 [info ] [MainThread]: adapter type: snowflake
+[0m20:24:04.112440 [info ] [MainThread]: adapter version: 1.8.4
+[0m20:24:04.179820 [info ] [MainThread]: Configuration:
+[0m20:24:04.180084 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:24:04.180252 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:24:04.180381 [info ] [MainThread]: Required dependencies:
+[0m20:24:04.180546 [debug] [MainThread]: Executing "git --help"
+[0m20:24:04.215925 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:24:04.216384 [debug] [MainThread]: STDERR: "b''"
+[0m20:24:04.216538 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:24:04.216719 [info ] [MainThread]: Connection:
+[0m20:24:04.216894 [info ] [MainThread]:   account: frfstss-rc57380
+[0m20:24:04.217010 [info ] [MainThread]:   user: DATACHAIN
+[0m20:24:04.217139 [info ] [MainThread]:   database: ALLIANZ
+[0m20:24:04.217271 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m20:24:04.217390 [info ] [MainThread]:   role: DEV_ROLE
+[0m20:24:04.217507 [info ] [MainThread]:   schema: DV
+[0m20:24:04.217628 [info ] [MainThread]:   authenticator: snowflake
+[0m20:24:04.217750 [info ] [MainThread]:   oauth_client_id: None
+[0m20:24:04.217868 [info ] [MainThread]:   query_tag: allianz_dbt
+[0m20:24:04.217989 [info ] [MainThread]:   client_session_keep_alive: False
+[0m20:24:04.218110 [info ] [MainThread]:   host: None
+[0m20:24:04.218226 [info ] [MainThread]:   port: None
+[0m20:24:04.218362 [info ] [MainThread]:   proxy_host: None
+[0m20:24:04.218479 [info ] [MainThread]:   proxy_port: None
+[0m20:24:04.218597 [info ] [MainThread]:   protocol: None
+[0m20:24:04.218715 [info ] [MainThread]:   connect_retries: 1
+[0m20:24:04.218831 [info ] [MainThread]:   connect_timeout: None
+[0m20:24:04.218949 [info ] [MainThread]:   retry_on_database_errors: False
+[0m20:24:04.219065 [info ] [MainThread]:   retry_all: False
+[0m20:24:04.219189 [info ] [MainThread]:   insecure_mode: False
+[0m20:24:04.219309 [info ] [MainThread]:   reuse_connections: None
+[0m20:24:04.219603 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m20:24:04.274650 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m20:24:04.275094 [debug] [MainThread]: Using snowflake connection "debug"
+[0m20:24:04.275212 [debug] [MainThread]: On debug: select 1 as id
+[0m20:24:04.275320 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:24:04.806454 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.531 seconds
+[0m20:24:04.808365 [debug] [MainThread]: On debug: Close
+[0m20:24:04.894981 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:24:04.895867 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:24:04.901504 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.1139501, "process_in_blocks": "0", "process_kernel_time": 0.163402, "process_mem_max_rss": "221544448", "process_out_blocks": "0", "process_user_time": 0.895994}
+[0m20:24:04.902598 [debug] [MainThread]: Command `dbt debug` succeeded at 20:24:04.902426 after 1.12 seconds
+[0m20:24:04.903074 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:24:04.903468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083d6d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f13750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102f0ebd0>]}
+[0m20:24:04.903904 [debug] [MainThread]: Flushing usage events
+[0m20:24:05.282708 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:24:06.023375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e30650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e28450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ea3e50>]}
+
+
+============================== 20:24:06.025268 | 4741a648-e91f-40b4-8fd7-879b1d3c3436 ==============================
+[0m20:24:06.025268 [info ] [MainThread]: Running with dbt=1.10.13
+[0m20:24:06.025563 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'cache_selected_only': 'False', 'target_path': 'None', 'invocation_command': 'dbt build --debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'introspect': 'True', 'warn_error': 'None', 'no_print': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'printer_width': '80', 'write_json': 'True', 'quiet': 'False', 'static_parser': 'True', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_colors': 'True', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'send_anonymous_usage_stats': 'True', 'debug': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_cache_events': 'False'}
+[0m20:24:06.367978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e5344d0>]}
+[0m20:24:06.391692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fdf9d0>]}
+[0m20:24:06.392192 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m20:24:06.452878 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m20:24:06.503499 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m20:24:06.503830 [debug] [MainThread]: Partial parsing: added file: allianz_dv_snowflake://macros/generate_schema_name.sql
+[0m20:24:06.504851 [info ] [MainThread]: Unable to do partial parsing because change detected to override macro. Starting full parse.
+[0m20:24:06.953063 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'link_customer_product' in the 'models' section of file 'models/dv/schema.yml'
+[0m20:24:07.022465 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_l_customer_product_pk.9faf86272b' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:24:07.022747 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.unique_link_customer_product_l_customer_product_pk.17b1e4497a' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:24:07.022925 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_h_customer_pk.54b9e1521a' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:24:07.023089 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.fk_ref_link_customer_product_h_customer_pk___ref_hub_customer___h_customer_pk.491f37f77f' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:24:07.023251 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_h_product_pk.1b3d1c3ea9' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:24:07.023414 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.fk_ref_link_customer_product_h_product_pk___ref_hub_product___h_product_pk.ec54dcabfd' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m20:24:07.059665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111de9290>]}
+[0m20:24:07.094095 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m20:24:07.095003 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m20:24:07.105656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111cb9790>]}
+[0m20:24:07.105934 [info ] [MainThread]: Found 8 models, 21 data tests, 3 sources, 585 macros
+[0m20:24:07.107340 [info ] [MainThread]: 
+[0m20:24:07.107497 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:24:07.107617 [info ] [MainThread]: 
+[0m20:24:07.107820 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:24:07.109680 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ALLIANZ'
+[0m20:24:07.109958 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ALLIANZ'
+[0m20:24:07.115941 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ"
+[0m20:24:07.116935 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ"
+[0m20:24:07.117144 [debug] [ThreadPool]: On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m20:24:07.117357 [debug] [ThreadPool]: On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m20:24:07.117505 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:24:07.117642 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:24:07.608969 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.491 seconds
+[0m20:24:07.611068 [debug] [ThreadPool]: On list_ALLIANZ: Close
+[0m20:24:07.642491 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.525 seconds
+[0m20:24:07.644008 [debug] [ThreadPool]: On list_ALLIANZ: Close
+[0m20:24:07.816977 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ALLIANZ, now list_ALLIANZ_DV)
+[0m20:24:07.818187 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ALLIANZ, now list_ALLIANZ_STAGING)
+[0m20:24:07.828438 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ_DV"
+[0m20:24:07.830810 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ_STAGING"
+[0m20:24:07.831276 [debug] [ThreadPool]: On list_ALLIANZ_DV: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ_DV"} */
+show objects in ALLIANZ.DV limit 10000
+[0m20:24:07.831682 [debug] [ThreadPool]: On list_ALLIANZ_STAGING: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ_STAGING"} */
+show objects in ALLIANZ.STAGING limit 10000
+[0m20:24:07.832086 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:24:07.832416 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:24:08.104562 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.272 seconds
+[0m20:24:08.107156 [debug] [ThreadPool]: On list_ALLIANZ_STAGING: Close
+[0m20:24:08.132662 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.300 seconds
+[0m20:24:08.134932 [debug] [ThreadPool]: On list_ALLIANZ_DV: Close
+[0m20:24:08.207976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111bde210>]}
+[0m20:24:08.210397 [debug] [Thread-1 (]: Began running node model.allianz_dv_snowflake.stg_customers
+[0m20:24:08.210907 [debug] [Thread-2 (]: Began running node model.allianz_dv_snowflake.stg_order_items
+[0m20:24:08.211312 [debug] [Thread-3 (]: Began running node model.allianz_dv_snowflake.stg_products
+[0m20:24:08.211800 [info ] [Thread-1 (]: 1 of 29 START sql view model STAGING.stg_customers ............................. [RUN]
+[0m20:24:08.212268 [info ] [Thread-2 (]: 2 of 29 START sql view model STAGING.stg_order_items ........................... [RUN]
+[0m20:24:08.212699 [info ] [Thread-3 (]: 3 of 29 START sql view model STAGING.stg_products .............................. [RUN]
+[0m20:24:08.213116 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ALLIANZ_DV, now model.allianz_dv_snowflake.stg_customers)
+[0m20:24:08.213834 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_ALLIANZ_STAGING, now model.allianz_dv_snowflake.stg_order_items)
+[0m20:24:08.214361 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.allianz_dv_snowflake.stg_products'
+[0m20:24:08.214735 [debug] [Thread-1 (]: Began compiling node model.allianz_dv_snowflake.stg_customers
+[0m20:24:08.215047 [debug] [Thread-2 (]: Began compiling node model.allianz_dv_snowflake.stg_order_items
+[0m20:24:08.215344 [debug] [Thread-3 (]: Began compiling node model.allianz_dv_snowflake.stg_products
+[0m20:24:08.222955 [debug] [Thread-1 (]: Writing injected SQL for node "model.allianz_dv_snowflake.stg_customers"
+[0m20:24:08.224855 [debug] [Thread-2 (]: Writing injected SQL for node "model.allianz_dv_snowflake.stg_order_items"
+[0m20:24:08.226661 [debug] [Thread-3 (]: Writing injected SQL for node "model.allianz_dv_snowflake.stg_products"
+[0m20:24:08.227438 [debug] [Thread-1 (]: Began executing node model.allianz_dv_snowflake.stg_customers
+[0m20:24:08.227713 [debug] [Thread-2 (]: Began executing node model.allianz_dv_snowflake.stg_order_items
+[0m20:24:08.228015 [debug] [Thread-3 (]: Began executing node model.allianz_dv_snowflake.stg_products
+[0m20:24:08.244945 [debug] [Thread-1 (]: Writing runtime sql for node "model.allianz_dv_snowflake.stg_customers"
+[0m20:24:08.246696 [debug] [Thread-2 (]: Writing runtime sql for node "model.allianz_dv_snowflake.stg_order_items"
+[0m20:24:08.248106 [debug] [Thread-3 (]: Writing runtime sql for node "model.allianz_dv_snowflake.stg_products"
+[0m20:24:08.249128 [debug] [Thread-2 (]: Using snowflake connection "model.allianz_dv_snowflake.stg_order_items"
+[0m20:24:08.249571 [debug] [Thread-1 (]: Using snowflake connection "model.allianz_dv_snowflake.stg_customers"
+[0m20:24:08.249987 [debug] [Thread-3 (]: Using snowflake connection "model.allianz_dv_snowflake.stg_products"
+[0m20:24:08.250222 [debug] [Thread-2 (]: On model.allianz_dv_snowflake.stg_order_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.stg_order_items"} */
+create or replace   view ALLIANZ.STAGING.stg_order_items
+  
+   as (
+    with s as (select * from ALLIANZ.RAW.order_items)
+select
+  upper(trim(cast(customer_id as string))) as customer_bk,
+  upper(trim(cast(product_id as string)))  as product_bk,
+  order_id, order_ts, sale_price,
+  'BQ_ORDERS' as record_source,
+  current_timestamp() as load_dts
+from s
+  );
+[0m20:24:08.250698 [debug] [Thread-1 (]: On model.allianz_dv_snowflake.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.stg_customers"} */
+create or replace   view ALLIANZ.STAGING.stg_customers
+  
+   as (
+    with s as (select * from ALLIANZ.RAW.users)
+select
+  upper(trim(cast(user_id as string))) as customer_bk,
+  first_name, last_name, email, created_at,
+  'BQ_USERS' as record_source,
+  current_timestamp() as load_dts
+from s
+  );
+[0m20:24:08.250971 [debug] [Thread-3 (]: On model.allianz_dv_snowflake.stg_products: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.stg_products"} */
+create or replace   view ALLIANZ.STAGING.stg_products
+  
+   as (
+    with s as (select * from ALLIANZ.RAW.products)
+select
+  upper(trim(cast(product_id as string))) as product_bk,
+  product_name, category, retail_price,
+  'BQ_PRODUCTS' as record_source,
+  current_timestamp() as load_dts
+from s
+  );
+[0m20:24:08.251196 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:24:08.251457 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:24:08.251720 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:24:08.735634 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.484 seconds
+[0m20:24:08.737833 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.487 seconds
+[0m20:24:08.757173 [debug] [Thread-3 (]: On model.allianz_dv_snowflake.stg_products: Close
+[0m20:24:08.758685 [debug] [Thread-2 (]: On model.allianz_dv_snowflake.stg_order_items: Close
+[0m20:24:08.834636 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111fbdb90>]}
+[0m20:24:08.835151 [info ] [Thread-2 (]: 2 of 29 OK created sql view model STAGING.stg_order_items ...................... [[32mSUCCESS 1[0m in 0.62s]
+[0m20:24:08.835518 [debug] [Thread-2 (]: Finished running node model.allianz_dv_snowflake.stg_order_items
+[0m20:24:08.836289 [debug] [Thread-4 (]: Began running node test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827
+[0m20:24:08.836588 [debug] [Thread-2 (]: Began running node test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660
+[0m20:24:08.836883 [info ] [Thread-4 (]: 4 of 29 START test not_null_stg_order_items_customer_bk ........................ [RUN]
+[0m20:24:08.837197 [info ] [Thread-2 (]: 5 of 29 START test not_null_stg_order_items_load_dts ........................... [RUN]
+[0m20:24:08.837626 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112cc7810>]}
+[0m20:24:08.837985 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827'
+[0m20:24:08.838239 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.stg_order_items, now test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660)
+[0m20:24:08.838687 [info ] [Thread-3 (]: 3 of 29 OK created sql view model STAGING.stg_products ......................... [[32mSUCCESS 1[0m in 0.62s]
+[0m20:24:08.838940 [debug] [Thread-4 (]: Began compiling node test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827
+[0m20:24:08.839174 [debug] [Thread-2 (]: Began compiling node test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660
+[0m20:24:08.839468 [debug] [Thread-3 (]: Finished running node model.allianz_dv_snowflake.stg_products
+[0m20:24:08.844624 [debug] [Thread-4 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827"
+[0m20:24:08.846836 [debug] [Thread-2 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660"
+[0m20:24:08.847118 [debug] [Thread-3 (]: Began running node test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45
+[0m20:24:08.847622 [info ] [Thread-3 (]: 6 of 29 START test not_null_stg_order_items_product_bk ......................... [RUN]
+[0m20:24:08.847982 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.stg_products, now test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45)
+[0m20:24:08.848252 [debug] [Thread-3 (]: Began compiling node test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45
+[0m20:24:08.850677 [debug] [Thread-3 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45"
+[0m20:24:08.850989 [debug] [Thread-2 (]: Began executing node test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660
+[0m20:24:08.851322 [debug] [Thread-4 (]: Began executing node test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827
+[0m20:24:08.860388 [debug] [Thread-2 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660"
+[0m20:24:08.862509 [debug] [Thread-4 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827"
+[0m20:24:08.862726 [debug] [Thread-3 (]: Began executing node test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45
+[0m20:24:08.864047 [debug] [Thread-3 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45"
+[0m20:24:08.864630 [debug] [Thread-4 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827"
+[0m20:24:08.864993 [debug] [Thread-3 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45"
+[0m20:24:08.865466 [debug] [Thread-2 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660"
+[0m20:24:08.865688 [debug] [Thread-4 (]: On test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_bk
+from ALLIANZ.STAGING.stg_order_items
+where customer_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:08.865894 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_bk
+from ALLIANZ.STAGING.stg_order_items
+where product_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:08.866099 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.STAGING.stg_order_items
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:08.866306 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:24:08.866498 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:24:08.866689 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:24:08.917339 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.666 seconds
+[0m20:24:08.918310 [debug] [Thread-1 (]: On model.allianz_dv_snowflake.stg_customers: Close
+[0m20:24:08.984414 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c7f710>]}
+[0m20:24:08.984859 [info ] [Thread-1 (]: 1 of 29 OK created sql view model STAGING.stg_customers ........................ [[32mSUCCESS 1[0m in 0.77s]
+[0m20:24:08.985148 [debug] [Thread-1 (]: Finished running node model.allianz_dv_snowflake.stg_customers
+[0m20:24:08.985371 [debug] [Thread-1 (]: Began running node test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac
+[0m20:24:08.985582 [info ] [Thread-1 (]: 7 of 29 START test not_null_stg_products_load_dts .............................. [RUN]
+[0m20:24:08.985807 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.stg_customers, now test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac)
+[0m20:24:08.986068 [debug] [Thread-1 (]: Began compiling node test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac
+[0m20:24:08.989049 [debug] [Thread-1 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac"
+[0m20:24:08.989659 [debug] [Thread-1 (]: Began executing node test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac
+[0m20:24:08.990947 [debug] [Thread-1 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac"
+[0m20:24:08.991446 [debug] [Thread-1 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac"
+[0m20:24:08.991636 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.STAGING.stg_products
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:08.991807 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:24:09.753240 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.886 seconds
+[0m20:24:09.754325 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.762 seconds
+[0m20:24:09.758398 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660: Close
+[0m20:24:09.760284 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac: Close
+[0m20:24:09.830181 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.964 seconds
+[0m20:24:09.831007 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.965 seconds
+[0m20:24:09.832921 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45: Close
+[0m20:24:09.834307 [debug] [Thread-4 (]: On test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827: Close
+[0m20:24:09.839397 [info ] [Thread-1 (]: 7 of 29 PASS not_null_stg_products_load_dts .................................... [[32mPASS[0m in 0.85s]
+[0m20:24:09.840101 [info ] [Thread-2 (]: 5 of 29 PASS not_null_stg_order_items_load_dts ................................. [[32mPASS[0m in 1.00s]
+[0m20:24:09.840750 [debug] [Thread-1 (]: Finished running node test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac
+[0m20:24:09.841218 [debug] [Thread-2 (]: Finished running node test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660
+[0m20:24:09.841554 [debug] [Thread-1 (]: Began running node test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb
+[0m20:24:09.841918 [debug] [Thread-2 (]: Began running node test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56
+[0m20:24:09.842240 [info ] [Thread-1 (]: 8 of 29 START test not_null_stg_products_product_bk ............................ [RUN]
+[0m20:24:09.842544 [info ] [Thread-2 (]: 9 of 29 START test not_null_stg_customers_customer_bk .......................... [RUN]
+[0m20:24:09.842897 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac, now test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb)
+[0m20:24:09.843224 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660, now test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56)
+[0m20:24:09.843543 [debug] [Thread-1 (]: Began compiling node test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb
+[0m20:24:09.843855 [debug] [Thread-2 (]: Began compiling node test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56
+[0m20:24:09.847472 [debug] [Thread-1 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb"
+[0m20:24:09.849921 [debug] [Thread-2 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56"
+[0m20:24:09.850554 [debug] [Thread-1 (]: Began executing node test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb
+[0m20:24:09.850822 [debug] [Thread-2 (]: Began executing node test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56
+[0m20:24:09.853089 [debug] [Thread-1 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb"
+[0m20:24:09.854690 [debug] [Thread-2 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56"
+[0m20:24:09.855440 [debug] [Thread-2 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56"
+[0m20:24:09.855901 [debug] [Thread-1 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb"
+[0m20:24:09.856177 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_bk
+from ALLIANZ.STAGING.stg_customers
+where customer_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:09.856479 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_bk
+from ALLIANZ.STAGING.stg_products
+where product_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:09.856732 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:24:09.856953 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:24:09.908078 [info ] [Thread-3 (]: 6 of 29 PASS not_null_stg_order_items_product_bk ............................... [[32mPASS[0m in 1.06s]
+[0m20:24:09.908416 [debug] [Thread-3 (]: Finished running node test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45
+[0m20:24:09.908632 [debug] [Thread-3 (]: Began running node test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4
+[0m20:24:09.908834 [info ] [Thread-3 (]: 10 of 29 START test not_null_stg_customers_load_dts ............................ [RUN]
+[0m20:24:09.909089 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45, now test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4)
+[0m20:24:09.909353 [debug] [Thread-3 (]: Began compiling node test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4
+[0m20:24:09.911571 [debug] [Thread-3 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4"
+[0m20:24:09.911998 [debug] [Thread-3 (]: Began executing node test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4
+[0m20:24:09.913214 [debug] [Thread-3 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4"
+[0m20:24:09.913797 [debug] [Thread-3 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4"
+[0m20:24:09.914099 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.STAGING.stg_customers
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:09.914309 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:24:09.916659 [info ] [Thread-4 (]: 4 of 29 PASS not_null_stg_order_items_customer_bk .............................. [[32mPASS[0m in 1.08s]
+[0m20:24:09.917820 [debug] [Thread-4 (]: Finished running node test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827
+[0m20:24:10.471631 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.614 seconds
+[0m20:24:10.475273 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56: Close
+[0m20:24:10.487546 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.573 seconds
+[0m20:24:10.489450 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4: Close
+[0m20:24:10.551918 [info ] [Thread-2 (]: 9 of 29 PASS not_null_stg_customers_customer_bk ................................ [[32mPASS[0m in 0.71s]
+[0m20:24:10.552520 [debug] [Thread-2 (]: Finished running node test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56
+[0m20:24:10.564821 [info ] [Thread-3 (]: 10 of 29 PASS not_null_stg_customers_load_dts .................................. [[32mPASS[0m in 0.66s]
+[0m20:24:10.565344 [debug] [Thread-3 (]: Finished running node test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4
+[0m20:24:10.565877 [debug] [Thread-4 (]: Began running node model.allianz_dv_snowflake.hub_customer
+[0m20:24:10.566366 [info ] [Thread-4 (]: 11 of 29 START sql table model DV.hub_customer ................................. [RUN]
+[0m20:24:10.566752 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827, now model.allianz_dv_snowflake.hub_customer)
+[0m20:24:10.567071 [debug] [Thread-4 (]: Began compiling node model.allianz_dv_snowflake.hub_customer
+[0m20:24:10.569585 [debug] [Thread-4 (]: Writing injected SQL for node "model.allianz_dv_snowflake.hub_customer"
+[0m20:24:10.570274 [debug] [Thread-4 (]: Began executing node model.allianz_dv_snowflake.hub_customer
+[0m20:24:10.584010 [debug] [Thread-4 (]: Writing runtime sql for node "model.allianz_dv_snowflake.hub_customer"
+[0m20:24:10.584870 [debug] [Thread-4 (]: Using snowflake connection "model.allianz_dv_snowflake.hub_customer"
+[0m20:24:10.585121 [debug] [Thread-4 (]: On model.allianz_dv_snowflake.hub_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.hub_customer"} */
+create or replace transient table ALLIANZ.DV.hub_customer
+         as
+        (
+
+select
+  UPPER(HEX_ENCODE(SHA2(COALESCE(CAST(customer_bk AS VARCHAR), ''), 256))) as h_customer_pk,
+  customer_bk, record_source, load_dts
+from ALLIANZ.STAGING.stg_customers
+group by 1,2,3,4
+        );
+[0m20:24:10.585356 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:24:10.722697 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.866 seconds
+[0m20:24:10.724187 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb: Close
+[0m20:24:10.793865 [info ] [Thread-1 (]: 8 of 29 PASS not_null_stg_products_product_bk .................................. [[32mPASS[0m in 0.95s]
+[0m20:24:10.794421 [debug] [Thread-1 (]: Finished running node test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb
+[0m20:24:10.794928 [debug] [Thread-3 (]: Began running node model.allianz_dv_snowflake.hub_product
+[0m20:24:10.795365 [info ] [Thread-3 (]: 12 of 29 START sql table model DV.hub_product .................................. [RUN]
+[0m20:24:10.795719 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4, now model.allianz_dv_snowflake.hub_product)
+[0m20:24:10.796047 [debug] [Thread-3 (]: Began compiling node model.allianz_dv_snowflake.hub_product
+[0m20:24:10.798626 [debug] [Thread-3 (]: Writing injected SQL for node "model.allianz_dv_snowflake.hub_product"
+[0m20:24:10.799213 [debug] [Thread-3 (]: Began executing node model.allianz_dv_snowflake.hub_product
+[0m20:24:10.801305 [debug] [Thread-3 (]: Writing runtime sql for node "model.allianz_dv_snowflake.hub_product"
+[0m20:24:10.802200 [debug] [Thread-3 (]: Using snowflake connection "model.allianz_dv_snowflake.hub_product"
+[0m20:24:10.802528 [debug] [Thread-3 (]: On model.allianz_dv_snowflake.hub_product: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.hub_product"} */
+create or replace transient table ALLIANZ.DV.hub_product
+         as
+        (
+
+select
+  UPPER(HEX_ENCODE(SHA2(COALESCE(CAST(product_bk  AS VARCHAR), ''), 256))) as h_product_pk,
+  product_bk, record_source, load_dts
+from ALLIANZ.STAGING.stg_products
+group by 1,2,3,4
+        );
+[0m20:24:10.802814 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:24:11.497268 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.912 seconds
+[0m20:24:11.504605 [debug] [Thread-4 (]: On model.allianz_dv_snowflake.hub_customer: Close
+[0m20:24:11.591320 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112290a10>]}
+[0m20:24:11.592244 [info ] [Thread-4 (]: 11 of 29 OK created sql table model DV.hub_customer ............................ [[32mSUCCESS 1[0m in 1.02s]
+[0m20:24:11.592789 [debug] [Thread-4 (]: Finished running node model.allianz_dv_snowflake.hub_customer
+[0m20:24:11.593448 [debug] [Thread-1 (]: Began running node test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397
+[0m20:24:11.593866 [debug] [Thread-2 (]: Began running node test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6
+[0m20:24:11.594202 [debug] [Thread-4 (]: Began running node test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23
+[0m20:24:11.594569 [info ] [Thread-1 (]: 13 of 29 START test not_null_hub_customer_customer_bk .......................... [RUN]
+[0m20:24:11.594888 [info ] [Thread-2 (]: 14 of 29 START test not_null_hub_customer_h_customer_pk ........................ [RUN]
+[0m20:24:11.595201 [info ] [Thread-4 (]: 15 of 29 START test unique_hub_customer_h_customer_pk .......................... [RUN]
+[0m20:24:11.595622 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb, now test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397)
+[0m20:24:11.596049 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56, now test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6)
+[0m20:24:11.596412 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.hub_customer, now test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23)
+[0m20:24:11.596815 [debug] [Thread-1 (]: Began compiling node test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397
+[0m20:24:11.597215 [debug] [Thread-2 (]: Began compiling node test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6
+[0m20:24:11.597768 [debug] [Thread-4 (]: Began compiling node test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23
+[0m20:24:11.601369 [debug] [Thread-1 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397"
+[0m20:24:11.604439 [debug] [Thread-2 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6"
+[0m20:24:11.608167 [debug] [Thread-4 (]: Writing injected SQL for node "test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23"
+[0m20:24:11.608866 [debug] [Thread-4 (]: Began executing node test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23
+[0m20:24:11.609124 [debug] [Thread-1 (]: Began executing node test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397
+[0m20:24:11.609538 [debug] [Thread-2 (]: Began executing node test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6
+[0m20:24:11.611195 [debug] [Thread-4 (]: Writing runtime sql for node "test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23"
+[0m20:24:11.614048 [debug] [Thread-1 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397"
+[0m20:24:11.616017 [debug] [Thread-2 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6"
+[0m20:24:11.617025 [debug] [Thread-1 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397"
+[0m20:24:11.617512 [debug] [Thread-4 (]: Using snowflake connection "test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23"
+[0m20:24:11.617898 [debug] [Thread-2 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6"
+[0m20:24:11.618134 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_bk
+from ALLIANZ.DV.hub_customer
+where customer_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:11.618374 [debug] [Thread-4 (]: On test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    h_customer_pk as unique_field,
+    count(*) as n_records
+
+from ALLIANZ.DV.hub_customer
+where h_customer_pk is not null
+group by h_customer_pk
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:11.618644 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select h_customer_pk
+from ALLIANZ.DV.hub_customer
+where h_customer_pk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:11.618919 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:24:11.619157 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:24:11.619369 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:24:11.964547 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.161 seconds
+[0m20:24:11.968194 [debug] [Thread-3 (]: On model.allianz_dv_snowflake.hub_product: Close
+[0m20:24:12.009441 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.390 seconds
+[0m20:24:12.012537 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397: Close
+[0m20:24:12.056230 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.437 seconds
+[0m20:24:12.058075 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6: Close
+[0m20:24:12.058682 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d5ff90>]}
+[0m20:24:12.060176 [info ] [Thread-3 (]: 12 of 29 OK created sql table model DV.hub_product ............................. [[32mSUCCESS 1[0m in 1.26s]
+[0m20:24:12.060712 [debug] [Thread-3 (]: Finished running node model.allianz_dv_snowflake.hub_product
+[0m20:24:12.062212 [debug] [Thread-3 (]: Began running node test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf
+[0m20:24:12.062984 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.444 seconds
+[0m20:24:12.063653 [info ] [Thread-3 (]: 16 of 29 START test not_null_hub_product_h_product_pk .......................... [RUN]
+[0m20:24:12.064868 [debug] [Thread-4 (]: On test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23: Close
+[0m20:24:12.065215 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.hub_product, now test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf)
+[0m20:24:12.066315 [debug] [Thread-3 (]: Began compiling node test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf
+[0m20:24:12.070539 [debug] [Thread-3 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf"
+[0m20:24:12.071487 [debug] [Thread-3 (]: Began executing node test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf
+[0m20:24:12.073106 [debug] [Thread-3 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf"
+[0m20:24:12.073758 [debug] [Thread-3 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf"
+[0m20:24:12.074040 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select h_product_pk
+from ALLIANZ.DV.hub_product
+where h_product_pk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:12.074293 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:24:12.086747 [info ] [Thread-1 (]: 13 of 29 PASS not_null_hub_customer_customer_bk ................................ [[32mPASS[0m in 0.49s]
+[0m20:24:12.087276 [debug] [Thread-1 (]: Finished running node test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397
+[0m20:24:12.087662 [debug] [Thread-1 (]: Began running node test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1
+[0m20:24:12.088867 [info ] [Thread-1 (]: 17 of 29 START test not_null_hub_product_product_bk ............................ [RUN]
+[0m20:24:12.089159 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397, now test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1)
+[0m20:24:12.089396 [debug] [Thread-1 (]: Began compiling node test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1
+[0m20:24:12.091944 [debug] [Thread-1 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1"
+[0m20:24:12.092904 [debug] [Thread-1 (]: Began executing node test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1
+[0m20:24:12.094163 [debug] [Thread-1 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1"
+[0m20:24:12.094691 [debug] [Thread-1 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1"
+[0m20:24:12.095009 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_bk
+from ALLIANZ.DV.hub_product
+where product_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:12.095708 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:24:12.134684 [info ] [Thread-2 (]: 14 of 29 PASS not_null_hub_customer_h_customer_pk .............................. [[32mPASS[0m in 0.54s]
+[0m20:24:12.135077 [debug] [Thread-2 (]: Finished running node test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6
+[0m20:24:12.135327 [debug] [Thread-2 (]: Began running node test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d
+[0m20:24:12.135564 [info ] [Thread-2 (]: 18 of 29 START test unique_hub_product_h_product_pk ............................ [RUN]
+[0m20:24:12.135813 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6, now test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d)
+[0m20:24:12.136026 [debug] [Thread-2 (]: Began compiling node test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d
+[0m20:24:12.137962 [debug] [Thread-2 (]: Writing injected SQL for node "test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d"
+[0m20:24:12.138359 [debug] [Thread-2 (]: Began executing node test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d
+[0m20:24:12.139379 [debug] [Thread-2 (]: Writing runtime sql for node "test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d"
+[0m20:24:12.139893 [debug] [Thread-2 (]: Using snowflake connection "test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d"
+[0m20:24:12.140070 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    h_product_pk as unique_field,
+    count(*) as n_records
+
+from ALLIANZ.DV.hub_product
+where h_product_pk is not null
+group by h_product_pk
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:12.140453 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:24:12.153113 [info ] [Thread-4 (]: 15 of 29 PASS unique_hub_customer_h_customer_pk ................................ [[32mPASS[0m in 0.56s]
+[0m20:24:12.153418 [debug] [Thread-4 (]: Finished running node test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23
+[0m20:24:12.153693 [debug] [Thread-4 (]: Began running node model.allianz_dv_snowflake.sat_customer
+[0m20:24:12.153956 [info ] [Thread-4 (]: 19 of 29 START sql table model DV.sat_customer ................................. [RUN]
+[0m20:24:12.154152 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23, now model.allianz_dv_snowflake.sat_customer)
+[0m20:24:12.154315 [debug] [Thread-4 (]: Began compiling node model.allianz_dv_snowflake.sat_customer
+[0m20:24:12.155805 [debug] [Thread-4 (]: Writing injected SQL for node "model.allianz_dv_snowflake.sat_customer"
+[0m20:24:12.156217 [debug] [Thread-4 (]: Began executing node model.allianz_dv_snowflake.sat_customer
+[0m20:24:12.157231 [debug] [Thread-4 (]: Writing runtime sql for node "model.allianz_dv_snowflake.sat_customer"
+[0m20:24:12.157846 [debug] [Thread-4 (]: Using snowflake connection "model.allianz_dv_snowflake.sat_customer"
+[0m20:24:12.158018 [debug] [Thread-4 (]: On model.allianz_dv_snowflake.sat_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.sat_customer"} */
+create or replace transient table ALLIANZ.DV.sat_customer
+         as
+        (
+
+with s as (select * from ALLIANZ.STAGING.stg_customers),
+     h as (select h_customer_pk, customer_bk from ALLIANZ.DV.hub_customer)
+select
+  h.h_customer_pk,
+  s.load_dts,
+  UPPER(HEX_ENCODE(SHA2(
+      COALESCE(CAST(s.first_name AS VARCHAR), '') || '||' ||
+      COALESCE(CAST(s.last_name  AS VARCHAR), '') || '||' ||
+      COALESCE(CAST(s.email      AS VARCHAR), '')
+  , 256))) as customer_hashdiff,
+  s.first_name, s.last_name, s.email, s.created_at,
+  s.record_source
+from s
+join h on s.customer_bk = h.customer_bk
+qualify row_number() over (partition by h.h_customer_pk, s.load_dts order by s.load_dts) = 1
+        );
+[0m20:24:12.158346 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:24:12.520907 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.425 seconds
+[0m20:24:12.522237 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.448 seconds
+[0m20:24:12.524543 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1: Close
+[0m20:24:12.526793 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf: Close
+[0m20:24:12.604342 [info ] [Thread-1 (]: 17 of 29 PASS not_null_hub_product_product_bk .................................. [[32mPASS[0m in 0.51s]
+[0m20:24:12.605071 [info ] [Thread-3 (]: 16 of 29 PASS not_null_hub_product_h_product_pk ................................ [[32mPASS[0m in 0.54s]
+[0m20:24:12.605713 [debug] [Thread-1 (]: Finished running node test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1
+[0m20:24:12.606217 [debug] [Thread-3 (]: Finished running node test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf
+[0m20:24:12.623669 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.483 seconds
+[0m20:24:12.625497 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d: Close
+[0m20:24:12.703584 [info ] [Thread-2 (]: 18 of 29 PASS unique_hub_product_h_product_pk .................................. [[32mPASS[0m in 0.57s]
+[0m20:24:12.704302 [debug] [Thread-2 (]: Finished running node test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d
+[0m20:24:12.704984 [debug] [Thread-1 (]: Began running node model.allianz_dv_snowflake.lnk_customer_product
+[0m20:24:12.705445 [debug] [Thread-3 (]: Began running node model.allianz_dv_snowflake.sat_product
+[0m20:24:12.706068 [info ] [Thread-1 (]: 20 of 29 START sql table model DV.lnk_customer_product ......................... [RUN]
+[0m20:24:12.706540 [info ] [Thread-3 (]: 21 of 29 START sql table model DV.sat_product .................................. [RUN]
+[0m20:24:12.706971 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1, now model.allianz_dv_snowflake.lnk_customer_product)
+[0m20:24:12.707361 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf, now model.allianz_dv_snowflake.sat_product)
+[0m20:24:12.707733 [debug] [Thread-1 (]: Began compiling node model.allianz_dv_snowflake.lnk_customer_product
+[0m20:24:12.708074 [debug] [Thread-3 (]: Began compiling node model.allianz_dv_snowflake.sat_product
+[0m20:24:12.712767 [debug] [Thread-1 (]: Writing injected SQL for node "model.allianz_dv_snowflake.lnk_customer_product"
+[0m20:24:12.715583 [debug] [Thread-3 (]: Writing injected SQL for node "model.allianz_dv_snowflake.sat_product"
+[0m20:24:12.716305 [debug] [Thread-3 (]: Began executing node model.allianz_dv_snowflake.sat_product
+[0m20:24:12.716641 [debug] [Thread-1 (]: Began executing node model.allianz_dv_snowflake.lnk_customer_product
+[0m20:24:12.718641 [debug] [Thread-3 (]: Writing runtime sql for node "model.allianz_dv_snowflake.sat_product"
+[0m20:24:12.721617 [debug] [Thread-1 (]: Writing runtime sql for node "model.allianz_dv_snowflake.lnk_customer_product"
+[0m20:24:12.722681 [debug] [Thread-3 (]: Using snowflake connection "model.allianz_dv_snowflake.sat_product"
+[0m20:24:12.722995 [debug] [Thread-3 (]: On model.allianz_dv_snowflake.sat_product: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.sat_product"} */
+create or replace transient table ALLIANZ.DV.sat_product
+         as
+        (
+
+with s as (select * from ALLIANZ.STAGING.stg_products),
+     h as (select h_product_pk, product_bk from ALLIANZ.DV.hub_product)
+select
+  h.h_product_pk,
+  s.load_dts,
+  UPPER(HEX_ENCODE(SHA2(COALESCE(CAST(s.product_name AS VARCHAR), '') || '||' || COALESCE(CAST(s.category AS VARCHAR), '') || '||' || COALESCE(CAST(s.retail_price AS VARCHAR), ''), 256))) as product_hashdiff,
+  s.product_name, s.category, s.retail_price,
+  s.record_source
+from s
+join h on s.product_bk = h.product_bk
+qualify row_number() over (partition by h.h_product_pk, s.load_dts order by s.load_dts) = 1
+        );
+[0m20:24:12.723285 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:24:12.724030 [debug] [Thread-1 (]: Using snowflake connection "model.allianz_dv_snowflake.lnk_customer_product"
+[0m20:24:12.724786 [debug] [Thread-1 (]: On model.allianz_dv_snowflake.lnk_customer_product: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.lnk_customer_product"} */
+create or replace transient table ALLIANZ.DV.lnk_customer_product
+         as
+        (
+
+with c as (
+select h_customer_pk, customer_bk from ALLIANZ.DV.hub_customer
+),
+     p as (
+select h_product_pk,  product_bk  from ALLIANZ.DV.hub_product
+),
+     o as (
+select customer_bk, product_bk, record_source, load_dts from ALLIANZ.STAGING.stg_order_items
+)
+
+select
+  HEX_ENCODE(SHA2(COALESCE(CAST(c.h_customer_pk AS VARCHAR), '') || '||' || COALESCE(CAST(p.h_product_pk AS VARCHAR), ''), 256)) as l_customer_product_pk,
+  c.h_customer_pk,
+  p.h_product_pk,
+  o.record_source,
+  o.load_dts
+from o
+join c using (customer_bk)
+join p using (product_bk)
+group by 1,2,3,4,5
+        );
+[0m20:24:12.725110 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:24:13.204184 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.045 seconds
+[0m20:24:13.208191 [debug] [Thread-4 (]: On model.allianz_dv_snowflake.sat_customer: Close
+[0m20:24:13.287022 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112cc8550>]}
+[0m20:24:13.287961 [info ] [Thread-4 (]: 19 of 29 OK created sql table model DV.sat_customer ............................ [[32mSUCCESS 1[0m in 1.13s]
+[0m20:24:13.288503 [debug] [Thread-4 (]: Finished running node model.allianz_dv_snowflake.sat_customer
+[0m20:24:13.289206 [debug] [Thread-2 (]: Began running node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387
+[0m20:24:13.289679 [debug] [Thread-4 (]: Began running node test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b
+[0m20:24:13.290169 [info ] [Thread-2 (]: 22 of 29 START test dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts  [RUN]
+[0m20:24:13.290556 [info ] [Thread-4 (]: 23 of 29 START test not_null_sat_customer_customer_hashdiff .................... [RUN]
+[0m20:24:13.290952 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d, now test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387)
+[0m20:24:13.291308 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.sat_customer, now test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b)
+[0m20:24:13.291708 [debug] [Thread-2 (]: Began compiling node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387
+[0m20:24:13.292102 [debug] [Thread-4 (]: Began compiling node test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b
+[0m20:24:13.296743 [debug] [Thread-2 (]: Writing injected SQL for node "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387"
+[0m20:24:13.299935 [debug] [Thread-4 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b"
+[0m20:24:13.300830 [debug] [Thread-4 (]: Began executing node test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b
+[0m20:24:13.301155 [debug] [Thread-2 (]: Began executing node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387
+[0m20:24:13.302940 [debug] [Thread-4 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b"
+[0m20:24:13.304459 [debug] [Thread-2 (]: Writing runtime sql for node "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387"
+[0m20:24:13.305199 [debug] [Thread-4 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b"
+[0m20:24:13.307114 [debug] [Thread-2 (]: Using snowflake connection "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387"
+[0m20:24:13.307492 [debug] [Thread-4 (]: On test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_hashdiff
+from ALLIANZ.DV.sat_customer
+where customer_hashdiff is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:13.307836 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        h_customer_pk, load_dts
+    from ALLIANZ.DV.sat_customer
+    group by h_customer_pk, load_dts
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:13.308104 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:24:13.308364 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:24:13.732095 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.008 seconds
+[0m20:24:13.736236 [debug] [Thread-3 (]: On model.allianz_dv_snowflake.sat_product: Close
+[0m20:24:13.740229 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.432 seconds
+[0m20:24:13.742429 [debug] [Thread-4 (]: On test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b: Close
+[0m20:24:13.748456 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.440 seconds
+[0m20:24:13.749964 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387: Close
+[0m20:24:13.755717 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.031 seconds
+[0m20:24:13.757252 [debug] [Thread-1 (]: On model.allianz_dv_snowflake.lnk_customer_product: Close
+[0m20:24:13.817332 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112794e10>]}
+[0m20:24:13.817928 [info ] [Thread-3 (]: 21 of 29 OK created sql table model DV.sat_product ............................. [[32mSUCCESS 1[0m in 1.11s]
+[0m20:24:13.818359 [debug] [Thread-3 (]: Finished running node model.allianz_dv_snowflake.sat_product
+[0m20:24:13.818698 [debug] [Thread-3 (]: Began running node test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160
+[0m20:24:13.819077 [info ] [Thread-3 (]: 24 of 29 START test not_null_sat_customer_h_customer_pk ........................ [RUN]
+[0m20:24:13.819551 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.sat_product, now test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160)
+[0m20:24:13.819897 [debug] [Thread-3 (]: Began compiling node test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160
+[0m20:24:13.823138 [debug] [Thread-3 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160"
+[0m20:24:13.823687 [debug] [Thread-3 (]: Began executing node test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160
+[0m20:24:13.825919 [debug] [Thread-3 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160"
+[0m20:24:13.826646 [debug] [Thread-3 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160"
+[0m20:24:13.827256 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select h_customer_pk
+from ALLIANZ.DV.sat_customer
+where h_customer_pk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:13.827754 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11278d710>]}
+[0m20:24:13.828281 [info ] [Thread-4 (]: 23 of 29 PASS not_null_sat_customer_customer_hashdiff .......................... [[32mPASS[0m in 0.54s]
+[0m20:24:13.828654 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:24:13.829122 [info ] [Thread-1 (]: 20 of 29 OK created sql table model DV.lnk_customer_product .................... [[32mSUCCESS 1[0m in 1.12s]
+[0m20:24:13.829536 [debug] [Thread-4 (]: Finished running node test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b
+[0m20:24:13.829913 [info ] [Thread-2 (]: 22 of 29 PASS dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts  [[32mPASS[0m in 0.54s]
+[0m20:24:13.830618 [debug] [Thread-1 (]: Finished running node model.allianz_dv_snowflake.lnk_customer_product
+[0m20:24:13.830957 [debug] [Thread-4 (]: Began running node test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390
+[0m20:24:13.831328 [debug] [Thread-2 (]: Finished running node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387
+[0m20:24:13.831618 [debug] [Thread-1 (]: Began running node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e
+[0m20:24:13.831918 [info ] [Thread-4 (]: 25 of 29 START test not_null_sat_customer_load_dts ............................. [RUN]
+[0m20:24:13.832290 [debug] [Thread-2 (]: Began running node test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4
+[0m20:24:13.832593 [info ] [Thread-1 (]: 26 of 29 START test dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts  [RUN]
+[0m20:24:13.833241 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b, now test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390)
+[0m20:24:13.833508 [info ] [Thread-2 (]: 27 of 29 START test not_null_sat_product_h_product_pk .......................... [RUN]
+[0m20:24:13.833948 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.lnk_customer_product, now test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e)
+[0m20:24:13.834229 [debug] [Thread-4 (]: Began compiling node test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390
+[0m20:24:13.834509 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387, now test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4)
+[0m20:24:13.834822 [debug] [Thread-1 (]: Began compiling node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e
+[0m20:24:13.837385 [debug] [Thread-4 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390"
+[0m20:24:13.837680 [debug] [Thread-2 (]: Began compiling node test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4
+[0m20:24:13.840016 [debug] [Thread-1 (]: Writing injected SQL for node "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e"
+[0m20:24:13.843448 [debug] [Thread-2 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4"
+[0m20:24:13.843770 [debug] [Thread-4 (]: Began executing node test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390
+[0m20:24:13.846295 [debug] [Thread-4 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390"
+[0m20:24:13.847178 [debug] [Thread-1 (]: Began executing node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e
+[0m20:24:13.848101 [debug] [Thread-2 (]: Began executing node test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4
+[0m20:24:13.848619 [debug] [Thread-4 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390"
+[0m20:24:13.850060 [debug] [Thread-1 (]: Writing runtime sql for node "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e"
+[0m20:24:13.851353 [debug] [Thread-2 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4"
+[0m20:24:13.852285 [debug] [Thread-4 (]: On test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.DV.sat_customer
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:13.853867 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:24:13.854368 [debug] [Thread-1 (]: Using snowflake connection "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e"
+[0m20:24:13.855132 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        h_product_pk, load_dts
+    from ALLIANZ.DV.sat_product
+    group by h_product_pk, load_dts
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:13.856138 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:24:13.857303 [debug] [Thread-2 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4"
+[0m20:24:13.857509 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select h_product_pk
+from ALLIANZ.DV.sat_product
+where h_product_pk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:13.858320 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:24:14.259346 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.431 seconds
+[0m20:24:14.261843 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.408 seconds
+[0m20:24:14.263268 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.405 seconds
+[0m20:24:14.265371 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160: Close
+[0m20:24:14.267251 [debug] [Thread-4 (]: On test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390: Close
+[0m20:24:14.268677 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4: Close
+[0m20:24:14.328111 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.472 seconds
+[0m20:24:14.329939 [debug] [Thread-1 (]: On test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e: Close
+[0m20:24:14.344429 [info ] [Thread-2 (]: 27 of 29 PASS not_null_sat_product_h_product_pk ................................ [[32mPASS[0m in 0.51s]
+[0m20:24:14.345134 [debug] [Thread-2 (]: Finished running node test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4
+[0m20:24:14.346038 [debug] [Thread-2 (]: Began running node test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588
+[0m20:24:14.346656 [info ] [Thread-2 (]: 28 of 29 START test not_null_sat_product_load_dts .............................. [RUN]
+[0m20:24:14.347126 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4, now test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588)
+[0m20:24:14.347468 [debug] [Thread-2 (]: Began compiling node test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588
+[0m20:24:14.347999 [info ] [Thread-3 (]: 24 of 29 PASS not_null_sat_customer_h_customer_pk .............................. [[32mPASS[0m in 0.53s]
+[0m20:24:14.352074 [debug] [Thread-2 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588"
+[0m20:24:14.352982 [debug] [Thread-3 (]: Finished running node test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160
+[0m20:24:14.353441 [debug] [Thread-3 (]: Began running node test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0
+[0m20:24:14.353775 [info ] [Thread-3 (]: 29 of 29 START test not_null_sat_product_product_hashdiff ...................... [RUN]
+[0m20:24:14.354104 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160, now test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0)
+[0m20:24:14.354392 [debug] [Thread-3 (]: Began compiling node test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0
+[0m20:24:14.354858 [info ] [Thread-4 (]: 25 of 29 PASS not_null_sat_customer_load_dts ................................... [[32mPASS[0m in 0.52s]
+[0m20:24:14.357613 [debug] [Thread-3 (]: Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0"
+[0m20:24:14.358209 [debug] [Thread-4 (]: Finished running node test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390
+[0m20:24:14.358513 [debug] [Thread-2 (]: Began executing node test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588
+[0m20:24:14.360357 [debug] [Thread-2 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588"
+[0m20:24:14.361522 [debug] [Thread-3 (]: Began executing node test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0
+[0m20:24:14.363723 [debug] [Thread-3 (]: Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0"
+[0m20:24:14.364760 [debug] [Thread-2 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588"
+[0m20:24:14.365100 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.DV.sat_product
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:14.365605 [debug] [Thread-3 (]: Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0"
+[0m20:24:14.365793 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:24:14.366108 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_hashdiff
+from ALLIANZ.DV.sat_product
+where product_hashdiff is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:24:14.366695 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:24:14.408683 [info ] [Thread-1 (]: 26 of 29 PASS dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts  [[32mPASS[0m in 0.57s]
+[0m20:24:14.409036 [debug] [Thread-1 (]: Finished running node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e
+[0m20:24:14.646839 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.281 seconds
+[0m20:24:14.649024 [debug] [Thread-2 (]: On test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588: Close
+[0m20:24:14.658392 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.292 seconds
+[0m20:24:14.660013 [debug] [Thread-3 (]: On test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0: Close
+[0m20:24:14.721476 [info ] [Thread-2 (]: 28 of 29 PASS not_null_sat_product_load_dts .................................... [[32mPASS[0m in 0.37s]
+[0m20:24:14.722025 [debug] [Thread-2 (]: Finished running node test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588
+[0m20:24:14.745286 [info ] [Thread-3 (]: 29 of 29 PASS not_null_sat_product_product_hashdiff ............................ [[32mPASS[0m in 0.39s]
+[0m20:24:14.745839 [debug] [Thread-3 (]: Finished running node test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0
+[0m20:24:14.747280 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:24:14.747567 [debug] [MainThread]: Connection 'test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e' was properly closed.
+[0m20:24:14.747827 [debug] [MainThread]: Connection 'test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588' was properly closed.
+[0m20:24:14.748060 [debug] [MainThread]: Connection 'test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0' was properly closed.
+[0m20:24:14.748297 [debug] [MainThread]: Connection 'test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390' was properly closed.
+[0m20:24:14.748648 [info ] [MainThread]: 
+[0m20:24:14.748902 [info ] [MainThread]: Finished running 5 table models, 21 data tests, 3 view models in 0 hours 0 minutes and 7.64 seconds (7.64s).
+[0m20:24:14.752051 [debug] [MainThread]: Command end result
+[0m20:24:14.772871 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m20:24:14.774100 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m20:24:14.778051 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/run_results.json
+[0m20:24:14.778340 [info ] [MainThread]: 
+[0m20:24:14.778940 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:24:14.779175 [info ] [MainThread]: 
+[0m20:24:14.779366 [info ] [MainThread]: Done. PASS=29 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=29
+[0m20:24:14.781711 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 8.797237, "process_in_blocks": "0", "process_kernel_time": 0.380992, "process_mem_max_rss": "256294912", "process_out_blocks": "0", "process_user_time": 3.373613}
+[0m20:24:14.782012 [debug] [MainThread]: Command `dbt build` succeeded at 20:24:14.781967 after 8.80 seconds
+[0m20:24:14.782227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ec7fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e280d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ade510>]}
+[0m20:24:14.782437 [debug] [MainThread]: Flushing usage events
+[0m20:24:15.236652 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:06:32.921715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116371f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116368650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1163e3e90>]}
+
+
+============================== 21:06:32.923797 | 2b358aef-d189-4f37-844c-239004ae2a91 ==============================
+[0m21:06:32.923797 [info ] [MainThread]: Running with dbt=1.10.13
+[0m21:06:32.924055 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'introspect': 'True', 'write_json': 'True', 'no_print': 'None', 'invocation_command': 'dbt run --profiles-dir ../profiles -s lnk_customer_product --full-refresh', 'static_parser': 'True', 'log_format': 'default', 'quiet': 'False', 'fail_fast': 'False', 'version_check': 'True', 'debug': 'False', 'profiles_dir': '../profiles', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'printer_width': '80'}
+[0m21:06:33.436332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b358aef-d189-4f37-844c-239004ae2a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1243f2d10>]}
+[0m21:06:33.458230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2b358aef-d189-4f37-844c-239004ae2a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11481fbd0>]}
+[0m21:06:33.458603 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m21:06:33.520456 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m21:06:33.569296 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:06:33.569568 [debug] [MainThread]: Partial parsing: updated file: allianz_dv_snowflake://models/dv/links/lnk_customer_product.sql
+[0m21:06:33.666979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2b358aef-d189-4f37-844c-239004ae2a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1253f6f10>]}
+[0m21:06:33.706896 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m21:06:33.707964 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m21:06:33.714681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2b358aef-d189-4f37-844c-239004ae2a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1253a4610>]}
+[0m21:06:33.714959 [info ] [MainThread]: Found 8 models, 21 data tests, 3 sources, 585 macros
+[0m21:06:33.715125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b358aef-d189-4f37-844c-239004ae2a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12443c7d0>]}
+[0m21:06:33.715863 [info ] [MainThread]: 
+[0m21:06:33.716036 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:06:33.716175 [info ] [MainThread]: 
+[0m21:06:33.716409 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:06:33.716792 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ALLIANZ'
+[0m21:06:33.722960 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ"
+[0m21:06:33.723162 [debug] [ThreadPool]: On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m21:06:33.723292 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:06:34.308396 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.585 seconds
+[0m21:06:34.310981 [debug] [ThreadPool]: On list_ALLIANZ: Close
+[0m21:06:34.396437 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ALLIANZ, now list_ALLIANZ_DV)
+[0m21:06:34.397183 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ALLIANZ_STAGING'
+[0m21:06:34.406262 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ_DV"
+[0m21:06:34.460244 [debug] [ThreadPool]: Using snowflake connection "list_ALLIANZ_STAGING"
+[0m21:06:34.460517 [debug] [ThreadPool]: On list_ALLIANZ_DV: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ_DV"} */
+show objects in ALLIANZ.DV limit 10000
+[0m21:06:34.460686 [debug] [ThreadPool]: On list_ALLIANZ_STAGING: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ_STAGING"} */
+show objects in ALLIANZ.STAGING limit 10000
+[0m21:06:34.460833 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:06:34.460966 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:06:35.315796 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.855 seconds
+[0m21:06:35.319466 [debug] [ThreadPool]: On list_ALLIANZ_DV: Close
+[0m21:06:35.320952 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.860 seconds
+[0m21:06:35.323803 [debug] [ThreadPool]: On list_ALLIANZ_STAGING: Close
+[0m21:06:35.423234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b358aef-d189-4f37-844c-239004ae2a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1266f1f50>]}
+[0m21:06:35.425879 [debug] [Thread-1 (]: Began running node model.allianz_dv_snowflake.lnk_customer_product
+[0m21:06:35.426400 [info ] [Thread-1 (]: 1 of 1 START sql incremental model DV.lnk_customer_product ..................... [RUN]
+[0m21:06:35.426810 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ALLIANZ_DV, now model.allianz_dv_snowflake.lnk_customer_product)
+[0m21:06:35.427140 [debug] [Thread-1 (]: Began compiling node model.allianz_dv_snowflake.lnk_customer_product
+[0m21:06:35.435159 [debug] [Thread-1 (]: Writing injected SQL for node "model.allianz_dv_snowflake.lnk_customer_product"
+[0m21:06:35.436055 [debug] [Thread-1 (]: Began executing node model.allianz_dv_snowflake.lnk_customer_product
+[0m21:06:35.467966 [debug] [Thread-1 (]: Writing runtime sql for node "model.allianz_dv_snowflake.lnk_customer_product"
+[0m21:06:35.468876 [debug] [Thread-1 (]: Using snowflake connection "model.allianz_dv_snowflake.lnk_customer_product"
+[0m21:06:35.469093 [debug] [Thread-1 (]: On model.allianz_dv_snowflake.lnk_customer_product: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.lnk_customer_product"} */
+create or replace transient table ALLIANZ.DV.lnk_customer_product
+         as
+        (
+
+with c as (
+select h_customer_pk, customer_bk from ALLIANZ.DV.hub_customer
+),
+     p as (
+select h_product_pk,  product_bk  from ALLIANZ.DV.hub_product
+),
+     o as (
+select customer_bk, product_bk, record_source, load_dts from ALLIANZ.STAGING.stg_order_items
+)
+
+select
+  HEX_ENCODE(SHA2(COALESCE(CAST(c.h_customer_pk AS VARCHAR), '') || '||' || COALESCE(CAST(p.h_product_pk AS VARCHAR), ''), 256)) as l_customer_product_pk,
+  c.h_customer_pk,
+  p.h_product_pk,
+  o.record_source,
+  o.load_dts
+from o
+join c using (customer_bk)
+join p using (product_bk)
+group by 1,2,3,4,5
+        );
+[0m21:06:35.469284 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:06:37.408640 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.939 seconds
+[0m21:06:37.412598 [debug] [Thread-1 (]: Applying DROP to: ALLIANZ.DV.lnk_customer_product__dbt_tmp
+[0m21:06:37.415326 [debug] [Thread-1 (]: Using snowflake connection "model.allianz_dv_snowflake.lnk_customer_product"
+[0m21:06:37.415511 [debug] [Thread-1 (]: On model.allianz_dv_snowflake.lnk_customer_product: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.lnk_customer_product"} */
+drop view if exists ALLIANZ.DV.lnk_customer_product__dbt_tmp cascade
+[0m21:06:37.474715 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.059 seconds
+[0m21:06:37.483494 [debug] [Thread-1 (]: On model.allianz_dv_snowflake.lnk_customer_product: Close
+[0m21:06:37.549940 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b358aef-d189-4f37-844c-239004ae2a91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1251751d0>]}
+[0m21:06:37.550356 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model DV.lnk_customer_product ................ [[32mSUCCESS 1[0m in 2.12s]
+[0m21:06:37.550714 [debug] [Thread-1 (]: Finished running node model.allianz_dv_snowflake.lnk_customer_product
+[0m21:06:37.551443 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:06:37.551622 [debug] [MainThread]: Connection 'model.allianz_dv_snowflake.lnk_customer_product' was properly closed.
+[0m21:06:37.551775 [debug] [MainThread]: Connection 'list_ALLIANZ_STAGING' was properly closed.
+[0m21:06:37.551945 [info ] [MainThread]: 
+[0m21:06:37.552138 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 3.84 seconds (3.84s).
+[0m21:06:37.552505 [debug] [MainThread]: Command end result
+[0m21:06:37.569049 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m21:06:37.569948 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m21:06:37.573034 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/run_results.json
+[0m21:06:37.573248 [info ] [MainThread]: 
+[0m21:06:37.573462 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:06:37.573614 [info ] [MainThread]: 
+[0m21:06:37.573771 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m21:06:37.575753 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.696111, "process_in_blocks": "0", "process_kernel_time": 0.232854, "process_mem_max_rss": "243695616", "process_out_blocks": "0", "process_user_time": 1.436517}
+[0m21:06:37.575971 [debug] [MainThread]: Command `dbt run` succeeded at 21:06:37.575932 after 4.70 seconds
+[0m21:06:37.576153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116363e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049cb090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049cad50>]}
+[0m21:06:37.576333 [debug] [MainThread]: Flushing usage events
+[0m21:06:38.010099 [debug] [MainThread]: An error was encountered while trying to flush usage events

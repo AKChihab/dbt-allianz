@@ -1,0 +1,1113 @@
+[0m18:24:06  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e30650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e28450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ea3e50>]}
+[0m18:24:06  Running with dbt=1.10.13
+[0m18:24:06  running dbt with arguments {'fail_fast': 'False', 'cache_selected_only': 'False', 'target_path': 'None', 'invocation_command': 'dbt build --debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'introspect': 'True', 'warn_error': 'None', 'no_print': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'printer_width': '80', 'write_json': 'True', 'quiet': 'False', 'static_parser': 'True', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_colors': 'True', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'send_anonymous_usage_stats': 'True', 'debug': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_cache_events': 'False'}
+[0m18:24:06  Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e5344d0>]}
+[0m18:24:06  Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fdf9d0>]}
+[0m18:24:06  Registered adapter: snowflake=1.8.4
+[0m18:24:06  checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m18:24:06  Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m18:24:06  Partial parsing: added file: allianz_dv_snowflake://macros/generate_schema_name.sql
+[0m18:24:06  Unable to do partial parsing because change detected to override macro. Starting full parse.
+[0m18:24:06  [[33mWARNING[0m]: Did not find matching node for patch with name 'link_customer_product' in the 'models' section of file 'models/dv/schema.yml'
+[0m18:24:07  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_l_customer_product_pk.9faf86272b' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:24:07  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.unique_link_customer_product_l_customer_product_pk.17b1e4497a' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:24:07  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_h_customer_pk.54b9e1521a' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:24:07  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.fk_ref_link_customer_product_h_customer_pk___ref_hub_customer___h_customer_pk.491f37f77f' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:24:07  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_h_product_pk.1b3d1c3ea9' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:24:07  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.fk_ref_link_customer_product_h_product_pk___ref_hub_product___h_product_pk.ec54dcabfd' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:24:07  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111de9290>]}
+[0m18:24:07  Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m18:24:07  Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m18:24:07  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111cb9790>]}
+[0m18:24:07  Found 8 models, 21 data tests, 3 sources, 585 macros
+[0m18:24:07  
+[0m18:24:07  Concurrency: 4 threads (target='dev')
+[0m18:24:07  
+[0m18:24:07  Acquiring new snowflake connection 'master'
+[0m18:24:07  Acquiring new snowflake connection 'list_ALLIANZ'
+[0m18:24:07  Acquiring new snowflake connection 'list_ALLIANZ'
+[0m18:24:07  Using snowflake connection "list_ALLIANZ"
+[0m18:24:07  Using snowflake connection "list_ALLIANZ"
+[0m18:24:07  On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m18:24:07  On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m18:24:07  Opening a new connection, currently in state init
+[0m18:24:07  Opening a new connection, currently in state init
+[0m18:24:07  SQL status: SUCCESS 5 in 0.491 seconds
+[0m18:24:07  On list_ALLIANZ: Close
+[0m18:24:07  SQL status: SUCCESS 5 in 0.525 seconds
+[0m18:24:07  On list_ALLIANZ: Close
+[0m18:24:07  Re-using an available connection from the pool (formerly list_ALLIANZ, now list_ALLIANZ_DV)
+[0m18:24:07  Re-using an available connection from the pool (formerly list_ALLIANZ, now list_ALLIANZ_STAGING)
+[0m18:24:07  Using snowflake connection "list_ALLIANZ_DV"
+[0m18:24:07  Using snowflake connection "list_ALLIANZ_STAGING"
+[0m18:24:07  On list_ALLIANZ_DV: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ_DV"} */
+show objects in ALLIANZ.DV limit 10000
+[0m18:24:07  On list_ALLIANZ_STAGING: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ_STAGING"} */
+show objects in ALLIANZ.STAGING limit 10000
+[0m18:24:07  Opening a new connection, currently in state closed
+[0m18:24:07  Opening a new connection, currently in state closed
+[0m18:24:08  SQL status: SUCCESS 0 in 0.272 seconds
+[0m18:24:08  On list_ALLIANZ_STAGING: Close
+[0m18:24:08  SQL status: SUCCESS 8 in 0.300 seconds
+[0m18:24:08  On list_ALLIANZ_DV: Close
+[0m18:24:08  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111bde210>]}
+[0m18:24:08  Began running node model.allianz_dv_snowflake.stg_customers
+[0m18:24:08  Began running node model.allianz_dv_snowflake.stg_order_items
+[0m18:24:08  Began running node model.allianz_dv_snowflake.stg_products
+[0m18:24:08  1 of 29 START sql view model STAGING.stg_customers ............................. [RUN]
+[0m18:24:08  2 of 29 START sql view model STAGING.stg_order_items ........................... [RUN]
+[0m18:24:08  3 of 29 START sql view model STAGING.stg_products .............................. [RUN]
+[0m18:24:08  Re-using an available connection from the pool (formerly list_ALLIANZ_DV, now model.allianz_dv_snowflake.stg_customers)
+[0m18:24:08  Re-using an available connection from the pool (formerly list_ALLIANZ_STAGING, now model.allianz_dv_snowflake.stg_order_items)
+[0m18:24:08  Acquiring new snowflake connection 'model.allianz_dv_snowflake.stg_products'
+[0m18:24:08  Began compiling node model.allianz_dv_snowflake.stg_customers
+[0m18:24:08  Began compiling node model.allianz_dv_snowflake.stg_order_items
+[0m18:24:08  Began compiling node model.allianz_dv_snowflake.stg_products
+[0m18:24:08  Writing injected SQL for node "model.allianz_dv_snowflake.stg_customers"
+[0m18:24:08  Writing injected SQL for node "model.allianz_dv_snowflake.stg_order_items"
+[0m18:24:08  Writing injected SQL for node "model.allianz_dv_snowflake.stg_products"
+[0m18:24:08  Began executing node model.allianz_dv_snowflake.stg_customers
+[0m18:24:08  Began executing node model.allianz_dv_snowflake.stg_order_items
+[0m18:24:08  Began executing node model.allianz_dv_snowflake.stg_products
+[0m18:24:08  Writing runtime sql for node "model.allianz_dv_snowflake.stg_customers"
+[0m18:24:08  Writing runtime sql for node "model.allianz_dv_snowflake.stg_order_items"
+[0m18:24:08  Writing runtime sql for node "model.allianz_dv_snowflake.stg_products"
+[0m18:24:08  Using snowflake connection "model.allianz_dv_snowflake.stg_order_items"
+[0m18:24:08  Using snowflake connection "model.allianz_dv_snowflake.stg_customers"
+[0m18:24:08  Using snowflake connection "model.allianz_dv_snowflake.stg_products"
+[0m18:24:08  On model.allianz_dv_snowflake.stg_order_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.stg_order_items"} */
+create or replace   view ALLIANZ.STAGING.stg_order_items
+  
+   as (
+    with s as (select * from ALLIANZ.RAW.order_items)
+select
+  upper(trim(cast(customer_id as string))) as customer_bk,
+  upper(trim(cast(product_id as string)))  as product_bk,
+  order_id, order_ts, sale_price,
+  'BQ_ORDERS' as record_source,
+  current_timestamp() as load_dts
+from s
+  );
+[0m18:24:08  On model.allianz_dv_snowflake.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.stg_customers"} */
+create or replace   view ALLIANZ.STAGING.stg_customers
+  
+   as (
+    with s as (select * from ALLIANZ.RAW.users)
+select
+  upper(trim(cast(user_id as string))) as customer_bk,
+  first_name, last_name, email, created_at,
+  'BQ_USERS' as record_source,
+  current_timestamp() as load_dts
+from s
+  );
+[0m18:24:08  On model.allianz_dv_snowflake.stg_products: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.stg_products"} */
+create or replace   view ALLIANZ.STAGING.stg_products
+  
+   as (
+    with s as (select * from ALLIANZ.RAW.products)
+select
+  upper(trim(cast(product_id as string))) as product_bk,
+  product_name, category, retail_price,
+  'BQ_PRODUCTS' as record_source,
+  current_timestamp() as load_dts
+from s
+  );
+[0m18:24:08  Opening a new connection, currently in state closed
+[0m18:24:08  Opening a new connection, currently in state closed
+[0m18:24:08  Opening a new connection, currently in state init
+[0m18:24:08  SQL status: SUCCESS 1 in 0.484 seconds
+[0m18:24:08  SQL status: SUCCESS 1 in 0.487 seconds
+[0m18:24:08  On model.allianz_dv_snowflake.stg_products: Close
+[0m18:24:08  On model.allianz_dv_snowflake.stg_order_items: Close
+[0m18:24:08  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111fbdb90>]}
+[0m18:24:08  2 of 29 OK created sql view model STAGING.stg_order_items ...................... [[32mSUCCESS 1[0m in 0.62s]
+[0m18:24:08  Finished running node model.allianz_dv_snowflake.stg_order_items
+[0m18:24:08  Began running node test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827
+[0m18:24:08  Began running node test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660
+[0m18:24:08  4 of 29 START test not_null_stg_order_items_customer_bk ........................ [RUN]
+[0m18:24:08  5 of 29 START test not_null_stg_order_items_load_dts ........................... [RUN]
+[0m18:24:08  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112cc7810>]}
+[0m18:24:08  Acquiring new snowflake connection 'test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827'
+[0m18:24:08  Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.stg_order_items, now test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660)
+[0m18:24:08  3 of 29 OK created sql view model STAGING.stg_products ......................... [[32mSUCCESS 1[0m in 0.62s]
+[0m18:24:08  Began compiling node test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827
+[0m18:24:08  Began compiling node test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660
+[0m18:24:08  Finished running node model.allianz_dv_snowflake.stg_products
+[0m18:24:08  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827"
+[0m18:24:08  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660"
+[0m18:24:08  Began running node test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45
+[0m18:24:08  6 of 29 START test not_null_stg_order_items_product_bk ......................... [RUN]
+[0m18:24:08  Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.stg_products, now test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45)
+[0m18:24:08  Began compiling node test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45
+[0m18:24:08  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45"
+[0m18:24:08  Began executing node test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660
+[0m18:24:08  Began executing node test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827
+[0m18:24:08  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660"
+[0m18:24:08  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827"
+[0m18:24:08  Began executing node test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45
+[0m18:24:08  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45"
+[0m18:24:08  Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827"
+[0m18:24:08  Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45"
+[0m18:24:08  Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660"
+[0m18:24:08  On test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_bk
+from ALLIANZ.STAGING.stg_order_items
+where customer_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:08  On test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_bk
+from ALLIANZ.STAGING.stg_order_items
+where product_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:08  On test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.STAGING.stg_order_items
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:08  Opening a new connection, currently in state init
+[0m18:24:08  Opening a new connection, currently in state closed
+[0m18:24:08  Opening a new connection, currently in state closed
+[0m18:24:08  SQL status: SUCCESS 1 in 0.666 seconds
+[0m18:24:08  On model.allianz_dv_snowflake.stg_customers: Close
+[0m18:24:08  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c7f710>]}
+[0m18:24:08  1 of 29 OK created sql view model STAGING.stg_customers ........................ [[32mSUCCESS 1[0m in 0.77s]
+[0m18:24:08  Finished running node model.allianz_dv_snowflake.stg_customers
+[0m18:24:08  Began running node test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac
+[0m18:24:08  7 of 29 START test not_null_stg_products_load_dts .............................. [RUN]
+[0m18:24:08  Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.stg_customers, now test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac)
+[0m18:24:08  Began compiling node test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac
+[0m18:24:08  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac"
+[0m18:24:08  Began executing node test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac
+[0m18:24:08  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac"
+[0m18:24:08  Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac"
+[0m18:24:08  On test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.STAGING.stg_products
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:08  Opening a new connection, currently in state closed
+[0m18:24:09  SQL status: SUCCESS 1 in 0.886 seconds
+[0m18:24:09  SQL status: SUCCESS 1 in 0.762 seconds
+[0m18:24:09  On test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660: Close
+[0m18:24:09  On test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac: Close
+[0m18:24:09  SQL status: SUCCESS 1 in 0.964 seconds
+[0m18:24:09  SQL status: SUCCESS 1 in 0.965 seconds
+[0m18:24:09  On test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45: Close
+[0m18:24:09  On test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827: Close
+[0m18:24:09  7 of 29 PASS not_null_stg_products_load_dts .................................... [[32mPASS[0m in 0.85s]
+[0m18:24:09  5 of 29 PASS not_null_stg_order_items_load_dts ................................. [[32mPASS[0m in 1.00s]
+[0m18:24:09  Finished running node test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac
+[0m18:24:09  Finished running node test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660
+[0m18:24:09  Began running node test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb
+[0m18:24:09  Began running node test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56
+[0m18:24:09  8 of 29 START test not_null_stg_products_product_bk ............................ [RUN]
+[0m18:24:09  9 of 29 START test not_null_stg_customers_customer_bk .......................... [RUN]
+[0m18:24:09  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_products_load_dts.9186b4e3ac, now test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb)
+[0m18:24:09  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_order_items_load_dts.eb6f262660, now test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56)
+[0m18:24:09  Began compiling node test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb
+[0m18:24:09  Began compiling node test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56
+[0m18:24:09  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb"
+[0m18:24:09  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56"
+[0m18:24:09  Began executing node test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb
+[0m18:24:09  Began executing node test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56
+[0m18:24:09  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb"
+[0m18:24:09  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56"
+[0m18:24:09  Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56"
+[0m18:24:09  Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb"
+[0m18:24:09  On test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_bk
+from ALLIANZ.STAGING.stg_customers
+where customer_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:09  On test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_bk
+from ALLIANZ.STAGING.stg_products
+where product_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:09  Opening a new connection, currently in state closed
+[0m18:24:09  Opening a new connection, currently in state closed
+[0m18:24:09  6 of 29 PASS not_null_stg_order_items_product_bk ............................... [[32mPASS[0m in 1.06s]
+[0m18:24:09  Finished running node test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45
+[0m18:24:09  Began running node test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4
+[0m18:24:09  10 of 29 START test not_null_stg_customers_load_dts ............................ [RUN]
+[0m18:24:09  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_order_items_product_bk.a4611b2b45, now test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4)
+[0m18:24:09  Began compiling node test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4
+[0m18:24:09  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4"
+[0m18:24:09  Began executing node test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4
+[0m18:24:09  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4"
+[0m18:24:09  Using snowflake connection "test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4"
+[0m18:24:09  On test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.STAGING.stg_customers
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:09  Opening a new connection, currently in state closed
+[0m18:24:09  4 of 29 PASS not_null_stg_order_items_customer_bk .............................. [[32mPASS[0m in 1.08s]
+[0m18:24:09  Finished running node test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827
+[0m18:24:10  SQL status: SUCCESS 1 in 0.614 seconds
+[0m18:24:10  On test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56: Close
+[0m18:24:10  SQL status: SUCCESS 1 in 0.573 seconds
+[0m18:24:10  On test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4: Close
+[0m18:24:10  9 of 29 PASS not_null_stg_customers_customer_bk ................................ [[32mPASS[0m in 0.71s]
+[0m18:24:10  Finished running node test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56
+[0m18:24:10  10 of 29 PASS not_null_stg_customers_load_dts .................................. [[32mPASS[0m in 0.66s]
+[0m18:24:10  Finished running node test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4
+[0m18:24:10  Began running node model.allianz_dv_snowflake.hub_customer
+[0m18:24:10  11 of 29 START sql table model DV.hub_customer ................................. [RUN]
+[0m18:24:10  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_order_items_customer_bk.43b1dc3827, now model.allianz_dv_snowflake.hub_customer)
+[0m18:24:10  Began compiling node model.allianz_dv_snowflake.hub_customer
+[0m18:24:10  Writing injected SQL for node "model.allianz_dv_snowflake.hub_customer"
+[0m18:24:10  Began executing node model.allianz_dv_snowflake.hub_customer
+[0m18:24:10  Writing runtime sql for node "model.allianz_dv_snowflake.hub_customer"
+[0m18:24:10  Using snowflake connection "model.allianz_dv_snowflake.hub_customer"
+[0m18:24:10  On model.allianz_dv_snowflake.hub_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.hub_customer"} */
+create or replace transient table ALLIANZ.DV.hub_customer
+         as
+        (
+
+select
+  UPPER(HEX_ENCODE(SHA2(COALESCE(CAST(customer_bk AS VARCHAR), ''), 256))) as h_customer_pk,
+  customer_bk, record_source, load_dts
+from ALLIANZ.STAGING.stg_customers
+group by 1,2,3,4
+        );
+[0m18:24:10  Opening a new connection, currently in state closed
+[0m18:24:10  SQL status: SUCCESS 1 in 0.866 seconds
+[0m18:24:10  On test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb: Close
+[0m18:24:10  8 of 29 PASS not_null_stg_products_product_bk .................................. [[32mPASS[0m in 0.95s]
+[0m18:24:10  Finished running node test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb
+[0m18:24:10  Began running node model.allianz_dv_snowflake.hub_product
+[0m18:24:10  12 of 29 START sql table model DV.hub_product .................................. [RUN]
+[0m18:24:10  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_customers_load_dts.3f65071fc4, now model.allianz_dv_snowflake.hub_product)
+[0m18:24:10  Began compiling node model.allianz_dv_snowflake.hub_product
+[0m18:24:10  Writing injected SQL for node "model.allianz_dv_snowflake.hub_product"
+[0m18:24:10  Began executing node model.allianz_dv_snowflake.hub_product
+[0m18:24:10  Writing runtime sql for node "model.allianz_dv_snowflake.hub_product"
+[0m18:24:10  Using snowflake connection "model.allianz_dv_snowflake.hub_product"
+[0m18:24:10  On model.allianz_dv_snowflake.hub_product: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.hub_product"} */
+create or replace transient table ALLIANZ.DV.hub_product
+         as
+        (
+
+select
+  UPPER(HEX_ENCODE(SHA2(COALESCE(CAST(product_bk  AS VARCHAR), ''), 256))) as h_product_pk,
+  product_bk, record_source, load_dts
+from ALLIANZ.STAGING.stg_products
+group by 1,2,3,4
+        );
+[0m18:24:10  Opening a new connection, currently in state closed
+[0m18:24:11  SQL status: SUCCESS 1 in 0.912 seconds
+[0m18:24:11  On model.allianz_dv_snowflake.hub_customer: Close
+[0m18:24:11  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112290a10>]}
+[0m18:24:11  11 of 29 OK created sql table model DV.hub_customer ............................ [[32mSUCCESS 1[0m in 1.02s]
+[0m18:24:11  Finished running node model.allianz_dv_snowflake.hub_customer
+[0m18:24:11  Began running node test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397
+[0m18:24:11  Began running node test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6
+[0m18:24:11  Began running node test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23
+[0m18:24:11  13 of 29 START test not_null_hub_customer_customer_bk .......................... [RUN]
+[0m18:24:11  14 of 29 START test not_null_hub_customer_h_customer_pk ........................ [RUN]
+[0m18:24:11  15 of 29 START test unique_hub_customer_h_customer_pk .......................... [RUN]
+[0m18:24:11  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_products_product_bk.f5e607d4fb, now test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397)
+[0m18:24:11  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_stg_customers_customer_bk.800745ad56, now test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6)
+[0m18:24:11  Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.hub_customer, now test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23)
+[0m18:24:11  Began compiling node test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397
+[0m18:24:11  Began compiling node test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6
+[0m18:24:11  Began compiling node test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23
+[0m18:24:11  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397"
+[0m18:24:11  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6"
+[0m18:24:11  Writing injected SQL for node "test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23"
+[0m18:24:11  Began executing node test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23
+[0m18:24:11  Began executing node test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397
+[0m18:24:11  Began executing node test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6
+[0m18:24:11  Writing runtime sql for node "test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23"
+[0m18:24:11  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397"
+[0m18:24:11  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6"
+[0m18:24:11  Using snowflake connection "test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397"
+[0m18:24:11  Using snowflake connection "test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23"
+[0m18:24:11  Using snowflake connection "test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6"
+[0m18:24:11  On test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_bk
+from ALLIANZ.DV.hub_customer
+where customer_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:11  On test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    h_customer_pk as unique_field,
+    count(*) as n_records
+
+from ALLIANZ.DV.hub_customer
+where h_customer_pk is not null
+group by h_customer_pk
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:11  On test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select h_customer_pk
+from ALLIANZ.DV.hub_customer
+where h_customer_pk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:11  Opening a new connection, currently in state closed
+[0m18:24:11  Opening a new connection, currently in state closed
+[0m18:24:11  Opening a new connection, currently in state closed
+[0m18:24:11  SQL status: SUCCESS 1 in 1.161 seconds
+[0m18:24:11  On model.allianz_dv_snowflake.hub_product: Close
+[0m18:24:12  SQL status: SUCCESS 1 in 0.390 seconds
+[0m18:24:12  On test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397: Close
+[0m18:24:12  SQL status: SUCCESS 1 in 0.437 seconds
+[0m18:24:12  On test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6: Close
+[0m18:24:12  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d5ff90>]}
+[0m18:24:12  12 of 29 OK created sql table model DV.hub_product ............................. [[32mSUCCESS 1[0m in 1.26s]
+[0m18:24:12  Finished running node model.allianz_dv_snowflake.hub_product
+[0m18:24:12  Began running node test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf
+[0m18:24:12  SQL status: SUCCESS 1 in 0.444 seconds
+[0m18:24:12  16 of 29 START test not_null_hub_product_h_product_pk .......................... [RUN]
+[0m18:24:12  On test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23: Close
+[0m18:24:12  Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.hub_product, now test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf)
+[0m18:24:12  Began compiling node test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf
+[0m18:24:12  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf"
+[0m18:24:12  Began executing node test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf
+[0m18:24:12  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf"
+[0m18:24:12  Using snowflake connection "test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf"
+[0m18:24:12  On test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select h_product_pk
+from ALLIANZ.DV.hub_product
+where h_product_pk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:12  Opening a new connection, currently in state closed
+[0m18:24:12  13 of 29 PASS not_null_hub_customer_customer_bk ................................ [[32mPASS[0m in 0.49s]
+[0m18:24:12  Finished running node test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397
+[0m18:24:12  Began running node test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1
+[0m18:24:12  17 of 29 START test not_null_hub_product_product_bk ............................ [RUN]
+[0m18:24:12  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_hub_customer_customer_bk.dd6fdb7397, now test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1)
+[0m18:24:12  Began compiling node test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1
+[0m18:24:12  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1"
+[0m18:24:12  Began executing node test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1
+[0m18:24:12  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1"
+[0m18:24:12  Using snowflake connection "test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1"
+[0m18:24:12  On test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_bk
+from ALLIANZ.DV.hub_product
+where product_bk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:12  Opening a new connection, currently in state closed
+[0m18:24:12  14 of 29 PASS not_null_hub_customer_h_customer_pk .............................. [[32mPASS[0m in 0.54s]
+[0m18:24:12  Finished running node test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6
+[0m18:24:12  Began running node test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d
+[0m18:24:12  18 of 29 START test unique_hub_product_h_product_pk ............................ [RUN]
+[0m18:24:12  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_hub_customer_h_customer_pk.18acb762b6, now test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d)
+[0m18:24:12  Began compiling node test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d
+[0m18:24:12  Writing injected SQL for node "test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d"
+[0m18:24:12  Began executing node test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d
+[0m18:24:12  Writing runtime sql for node "test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d"
+[0m18:24:12  Using snowflake connection "test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d"
+[0m18:24:12  On test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    h_product_pk as unique_field,
+    count(*) as n_records
+
+from ALLIANZ.DV.hub_product
+where h_product_pk is not null
+group by h_product_pk
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:12  Opening a new connection, currently in state closed
+[0m18:24:12  15 of 29 PASS unique_hub_customer_h_customer_pk ................................ [[32mPASS[0m in 0.56s]
+[0m18:24:12  Finished running node test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23
+[0m18:24:12  Began running node model.allianz_dv_snowflake.sat_customer
+[0m18:24:12  19 of 29 START sql table model DV.sat_customer ................................. [RUN]
+[0m18:24:12  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.unique_hub_customer_h_customer_pk.b365b5ef23, now model.allianz_dv_snowflake.sat_customer)
+[0m18:24:12  Began compiling node model.allianz_dv_snowflake.sat_customer
+[0m18:24:12  Writing injected SQL for node "model.allianz_dv_snowflake.sat_customer"
+[0m18:24:12  Began executing node model.allianz_dv_snowflake.sat_customer
+[0m18:24:12  Writing runtime sql for node "model.allianz_dv_snowflake.sat_customer"
+[0m18:24:12  Using snowflake connection "model.allianz_dv_snowflake.sat_customer"
+[0m18:24:12  On model.allianz_dv_snowflake.sat_customer: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.sat_customer"} */
+create or replace transient table ALLIANZ.DV.sat_customer
+         as
+        (
+
+with s as (select * from ALLIANZ.STAGING.stg_customers),
+     h as (select h_customer_pk, customer_bk from ALLIANZ.DV.hub_customer)
+select
+  h.h_customer_pk,
+  s.load_dts,
+  UPPER(HEX_ENCODE(SHA2(
+      COALESCE(CAST(s.first_name AS VARCHAR), '') || '||' ||
+      COALESCE(CAST(s.last_name  AS VARCHAR), '') || '||' ||
+      COALESCE(CAST(s.email      AS VARCHAR), '')
+  , 256))) as customer_hashdiff,
+  s.first_name, s.last_name, s.email, s.created_at,
+  s.record_source
+from s
+join h on s.customer_bk = h.customer_bk
+qualify row_number() over (partition by h.h_customer_pk, s.load_dts order by s.load_dts) = 1
+        );
+[0m18:24:12  Opening a new connection, currently in state closed
+[0m18:24:12  SQL status: SUCCESS 1 in 0.425 seconds
+[0m18:24:12  SQL status: SUCCESS 1 in 0.448 seconds
+[0m18:24:12  On test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1: Close
+[0m18:24:12  On test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf: Close
+[0m18:24:12  17 of 29 PASS not_null_hub_product_product_bk .................................. [[32mPASS[0m in 0.51s]
+[0m18:24:12  16 of 29 PASS not_null_hub_product_h_product_pk ................................ [[32mPASS[0m in 0.54s]
+[0m18:24:12  Finished running node test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1
+[0m18:24:12  Finished running node test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf
+[0m18:24:12  SQL status: SUCCESS 1 in 0.483 seconds
+[0m18:24:12  On test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d: Close
+[0m18:24:12  18 of 29 PASS unique_hub_product_h_product_pk .................................. [[32mPASS[0m in 0.57s]
+[0m18:24:12  Finished running node test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d
+[0m18:24:12  Began running node model.allianz_dv_snowflake.lnk_customer_product
+[0m18:24:12  Began running node model.allianz_dv_snowflake.sat_product
+[0m18:24:12  20 of 29 START sql table model DV.lnk_customer_product ......................... [RUN]
+[0m18:24:12  21 of 29 START sql table model DV.sat_product .................................. [RUN]
+[0m18:24:12  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_hub_product_product_bk.64dbd014f1, now model.allianz_dv_snowflake.lnk_customer_product)
+[0m18:24:12  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_hub_product_h_product_pk.96a91646bf, now model.allianz_dv_snowflake.sat_product)
+[0m18:24:12  Began compiling node model.allianz_dv_snowflake.lnk_customer_product
+[0m18:24:12  Began compiling node model.allianz_dv_snowflake.sat_product
+[0m18:24:12  Writing injected SQL for node "model.allianz_dv_snowflake.lnk_customer_product"
+[0m18:24:12  Writing injected SQL for node "model.allianz_dv_snowflake.sat_product"
+[0m18:24:12  Began executing node model.allianz_dv_snowflake.sat_product
+[0m18:24:12  Began executing node model.allianz_dv_snowflake.lnk_customer_product
+[0m18:24:12  Writing runtime sql for node "model.allianz_dv_snowflake.sat_product"
+[0m18:24:12  Writing runtime sql for node "model.allianz_dv_snowflake.lnk_customer_product"
+[0m18:24:12  Using snowflake connection "model.allianz_dv_snowflake.sat_product"
+[0m18:24:12  On model.allianz_dv_snowflake.sat_product: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.sat_product"} */
+create or replace transient table ALLIANZ.DV.sat_product
+         as
+        (
+
+with s as (select * from ALLIANZ.STAGING.stg_products),
+     h as (select h_product_pk, product_bk from ALLIANZ.DV.hub_product)
+select
+  h.h_product_pk,
+  s.load_dts,
+  UPPER(HEX_ENCODE(SHA2(COALESCE(CAST(s.product_name AS VARCHAR), '') || '||' || COALESCE(CAST(s.category AS VARCHAR), '') || '||' || COALESCE(CAST(s.retail_price AS VARCHAR), ''), 256))) as product_hashdiff,
+  s.product_name, s.category, s.retail_price,
+  s.record_source
+from s
+join h on s.product_bk = h.product_bk
+qualify row_number() over (partition by h.h_product_pk, s.load_dts order by s.load_dts) = 1
+        );
+[0m18:24:12  Opening a new connection, currently in state closed
+[0m18:24:12  Using snowflake connection "model.allianz_dv_snowflake.lnk_customer_product"
+[0m18:24:12  On model.allianz_dv_snowflake.lnk_customer_product: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "model.allianz_dv_snowflake.lnk_customer_product"} */
+create or replace transient table ALLIANZ.DV.lnk_customer_product
+         as
+        (
+
+with c as (
+select h_customer_pk, customer_bk from ALLIANZ.DV.hub_customer
+),
+     p as (
+select h_product_pk,  product_bk  from ALLIANZ.DV.hub_product
+),
+     o as (
+select customer_bk, product_bk, record_source, load_dts from ALLIANZ.STAGING.stg_order_items
+)
+
+select
+  HEX_ENCODE(SHA2(COALESCE(CAST(c.h_customer_pk AS VARCHAR), '') || '||' || COALESCE(CAST(p.h_product_pk AS VARCHAR), ''), 256)) as l_customer_product_pk,
+  c.h_customer_pk,
+  p.h_product_pk,
+  o.record_source,
+  o.load_dts
+from o
+join c using (customer_bk)
+join p using (product_bk)
+group by 1,2,3,4,5
+        );
+[0m18:24:12  Opening a new connection, currently in state closed
+[0m18:24:13  SQL status: SUCCESS 1 in 1.045 seconds
+[0m18:24:13  On model.allianz_dv_snowflake.sat_customer: Close
+[0m18:24:13  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112cc8550>]}
+[0m18:24:13  19 of 29 OK created sql table model DV.sat_customer ............................ [[32mSUCCESS 1[0m in 1.13s]
+[0m18:24:13  Finished running node model.allianz_dv_snowflake.sat_customer
+[0m18:24:13  Began running node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387
+[0m18:24:13  Began running node test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b
+[0m18:24:13  22 of 29 START test dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts  [RUN]
+[0m18:24:13  23 of 29 START test not_null_sat_customer_customer_hashdiff .................... [RUN]
+[0m18:24:13  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.unique_hub_product_h_product_pk.e3ffb9490d, now test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387)
+[0m18:24:13  Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.sat_customer, now test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b)
+[0m18:24:13  Began compiling node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387
+[0m18:24:13  Began compiling node test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b
+[0m18:24:13  Writing injected SQL for node "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387"
+[0m18:24:13  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b"
+[0m18:24:13  Began executing node test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b
+[0m18:24:13  Began executing node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387
+[0m18:24:13  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b"
+[0m18:24:13  Writing runtime sql for node "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387"
+[0m18:24:13  Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b"
+[0m18:24:13  Using snowflake connection "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387"
+[0m18:24:13  On test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_hashdiff
+from ALLIANZ.DV.sat_customer
+where customer_hashdiff is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:13  On test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        h_customer_pk, load_dts
+    from ALLIANZ.DV.sat_customer
+    group by h_customer_pk, load_dts
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:13  Opening a new connection, currently in state closed
+[0m18:24:13  Opening a new connection, currently in state closed
+[0m18:24:13  SQL status: SUCCESS 1 in 1.008 seconds
+[0m18:24:13  On model.allianz_dv_snowflake.sat_product: Close
+[0m18:24:13  SQL status: SUCCESS 1 in 0.432 seconds
+[0m18:24:13  On test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b: Close
+[0m18:24:13  SQL status: SUCCESS 1 in 0.440 seconds
+[0m18:24:13  On test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387: Close
+[0m18:24:13  SQL status: SUCCESS 1 in 1.031 seconds
+[0m18:24:13  On model.allianz_dv_snowflake.lnk_customer_product: Close
+[0m18:24:13  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112794e10>]}
+[0m18:24:13  21 of 29 OK created sql table model DV.sat_product ............................. [[32mSUCCESS 1[0m in 1.11s]
+[0m18:24:13  Finished running node model.allianz_dv_snowflake.sat_product
+[0m18:24:13  Began running node test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160
+[0m18:24:13  24 of 29 START test not_null_sat_customer_h_customer_pk ........................ [RUN]
+[0m18:24:13  Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.sat_product, now test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160)
+[0m18:24:13  Began compiling node test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160
+[0m18:24:13  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160"
+[0m18:24:13  Began executing node test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160
+[0m18:24:13  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160"
+[0m18:24:13  Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160"
+[0m18:24:13  On test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select h_customer_pk
+from ALLIANZ.DV.sat_customer
+where h_customer_pk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:13  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4741a648-e91f-40b4-8fd7-879b1d3c3436', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11278d710>]}
+[0m18:24:13  23 of 29 PASS not_null_sat_customer_customer_hashdiff .......................... [[32mPASS[0m in 0.54s]
+[0m18:24:13  Opening a new connection, currently in state closed
+[0m18:24:13  20 of 29 OK created sql table model DV.lnk_customer_product .................... [[32mSUCCESS 1[0m in 1.12s]
+[0m18:24:13  Finished running node test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b
+[0m18:24:13  22 of 29 PASS dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts  [[32mPASS[0m in 0.54s]
+[0m18:24:13  Finished running node model.allianz_dv_snowflake.lnk_customer_product
+[0m18:24:13  Began running node test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390
+[0m18:24:13  Finished running node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387
+[0m18:24:13  Began running node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e
+[0m18:24:13  25 of 29 START test not_null_sat_customer_load_dts ............................. [RUN]
+[0m18:24:13  Began running node test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4
+[0m18:24:13  26 of 29 START test dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts  [RUN]
+[0m18:24:13  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_sat_customer_customer_hashdiff.45c18c6d2b, now test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390)
+[0m18:24:13  27 of 29 START test not_null_sat_product_h_product_pk .......................... [RUN]
+[0m18:24:13  Re-using an available connection from the pool (formerly model.allianz_dv_snowflake.lnk_customer_product, now test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e)
+[0m18:24:13  Began compiling node test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390
+[0m18:24:13  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_customer_h_customer_pk__load_dts.337f53e387, now test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4)
+[0m18:24:13  Began compiling node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e
+[0m18:24:13  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390"
+[0m18:24:13  Began compiling node test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4
+[0m18:24:13  Writing injected SQL for node "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e"
+[0m18:24:13  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4"
+[0m18:24:13  Began executing node test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390
+[0m18:24:13  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390"
+[0m18:24:13  Began executing node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e
+[0m18:24:13  Began executing node test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4
+[0m18:24:13  Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390"
+[0m18:24:13  Writing runtime sql for node "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e"
+[0m18:24:13  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4"
+[0m18:24:13  On test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.DV.sat_customer
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:13  Opening a new connection, currently in state closed
+[0m18:24:13  Using snowflake connection "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e"
+[0m18:24:13  On test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        h_product_pk, load_dts
+    from ALLIANZ.DV.sat_product
+    group by h_product_pk, load_dts
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:13  Opening a new connection, currently in state closed
+[0m18:24:13  Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4"
+[0m18:24:13  On test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select h_product_pk
+from ALLIANZ.DV.sat_product
+where h_product_pk is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:13  Opening a new connection, currently in state closed
+[0m18:24:14  SQL status: SUCCESS 1 in 0.431 seconds
+[0m18:24:14  SQL status: SUCCESS 1 in 0.408 seconds
+[0m18:24:14  SQL status: SUCCESS 1 in 0.405 seconds
+[0m18:24:14  On test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160: Close
+[0m18:24:14  On test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390: Close
+[0m18:24:14  On test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4: Close
+[0m18:24:14  SQL status: SUCCESS 1 in 0.472 seconds
+[0m18:24:14  On test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e: Close
+[0m18:24:14  27 of 29 PASS not_null_sat_product_h_product_pk ................................ [[32mPASS[0m in 0.51s]
+[0m18:24:14  Finished running node test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4
+[0m18:24:14  Began running node test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588
+[0m18:24:14  28 of 29 START test not_null_sat_product_load_dts .............................. [RUN]
+[0m18:24:14  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_sat_product_h_product_pk.5db48c75f4, now test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588)
+[0m18:24:14  Began compiling node test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588
+[0m18:24:14  24 of 29 PASS not_null_sat_customer_h_customer_pk .............................. [[32mPASS[0m in 0.53s]
+[0m18:24:14  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588"
+[0m18:24:14  Finished running node test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160
+[0m18:24:14  Began running node test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0
+[0m18:24:14  29 of 29 START test not_null_sat_product_product_hashdiff ...................... [RUN]
+[0m18:24:14  Re-using an available connection from the pool (formerly test.allianz_dv_snowflake.not_null_sat_customer_h_customer_pk.352a96d160, now test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0)
+[0m18:24:14  Began compiling node test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0
+[0m18:24:14  25 of 29 PASS not_null_sat_customer_load_dts ................................... [[32mPASS[0m in 0.52s]
+[0m18:24:14  Writing injected SQL for node "test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0"
+[0m18:24:14  Finished running node test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390
+[0m18:24:14  Began executing node test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588
+[0m18:24:14  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588"
+[0m18:24:14  Began executing node test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0
+[0m18:24:14  Writing runtime sql for node "test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0"
+[0m18:24:14  Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588"
+[0m18:24:14  On test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select load_dts
+from ALLIANZ.DV.sat_product
+where load_dts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:14  Using snowflake connection "test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0"
+[0m18:24:14  Opening a new connection, currently in state closed
+[0m18:24:14  On test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "node_id": "test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_hashdiff
+from ALLIANZ.DV.sat_product
+where product_hashdiff is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:24:14  Opening a new connection, currently in state closed
+[0m18:24:14  26 of 29 PASS dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts  [[32mPASS[0m in 0.57s]
+[0m18:24:14  Finished running node test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e
+[0m18:24:14  SQL status: SUCCESS 1 in 0.281 seconds
+[0m18:24:14  On test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588: Close
+[0m18:24:14  SQL status: SUCCESS 1 in 0.292 seconds
+[0m18:24:14  On test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0: Close
+[0m18:24:14  28 of 29 PASS not_null_sat_product_load_dts .................................... [[32mPASS[0m in 0.37s]
+[0m18:24:14  Finished running node test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588
+[0m18:24:14  29 of 29 PASS not_null_sat_product_product_hashdiff ............................ [[32mPASS[0m in 0.39s]
+[0m18:24:14  Finished running node test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0
+[0m18:24:14  Connection 'master' was properly closed.
+[0m18:24:14  Connection 'test.allianz_dv_snowflake.dbt_utils_unique_combination_of_columns_sat_product_h_product_pk__load_dts.22fa94ee1e' was properly closed.
+[0m18:24:14  Connection 'test.allianz_dv_snowflake.not_null_sat_product_load_dts.bc75ad0588' was properly closed.
+[0m18:24:14  Connection 'test.allianz_dv_snowflake.not_null_sat_product_product_hashdiff.a3fdcc3bc0' was properly closed.
+[0m18:24:14  Connection 'test.allianz_dv_snowflake.not_null_sat_customer_load_dts.a5687a5390' was properly closed.
+[0m18:24:14  
+[0m18:24:14  Finished running 5 table models, 21 data tests, 3 view models in 0 hours 0 minutes and 7.64 seconds (7.64s).
+[0m18:24:14  Command end result
+[0m18:24:14  Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m18:24:14  Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m18:24:14  Wrote artifact RunExecutionResult to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/run_results.json
+[0m18:24:14  
+[0m18:24:14  [32mCompleted successfully[0m
+[0m18:24:14  
+[0m18:24:14  Done. PASS=29 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=29
+[0m18:24:14  Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 8.797237, "process_in_blocks": "0", "process_kernel_time": 0.380992, "process_mem_max_rss": "256294912", "process_out_blocks": "0", "process_user_time": 3.373613}
+[0m18:24:14  Command `dbt build` succeeded at 20:24:14.781967 after 8.80 seconds
+[0m18:24:14  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ec7fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e280d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ade510>]}
+[0m18:24:14  Flushing usage events
+[0m18:24:15  An error was encountered while trying to flush usage events

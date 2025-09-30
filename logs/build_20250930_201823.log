@@ -1,0 +1,83 @@
+[0m18:18:23  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107870790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078e3710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078e3f90>]}
+[0m18:18:23  Running with dbt=1.10.13
+[0m18:18:23  running dbt with arguments {'target_path': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_format': 'default', 'write_json': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'version_check': 'True', 'use_colors': 'True', 'empty': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'static_parser': 'True', 'invocation_command': 'dbt build --debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'introspect': 'True', 'partial_parse': 'True', 'printer_width': '80', 'debug': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False'}
+[0m18:18:23  Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078cc410>]}
+[0m18:18:23  Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106723950>]}
+[0m18:18:23  Registered adapter: snowflake=1.8.4
+[0m18:18:24  checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m18:18:24  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:18:24  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107125890>]}
+[0m18:18:24  [[33mWARNING[0m]: Did not find matching node for patch with name 'link_customer_product' in the 'models' section of file 'models/dv/schema.yml'
+[0m18:18:24  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_l_customer_product_pk.9faf86272b' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:18:24  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.unique_link_customer_product_l_customer_product_pk.17b1e4497a' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:18:24  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_h_customer_pk.54b9e1521a' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:18:24  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.fk_ref_link_customer_product_h_customer_pk___ref_hub_customer___h_customer_pk.491f37f77f' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:18:24  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.not_null_link_customer_product_h_product_pk.1b3d1c3ea9' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:18:24  [[33mWARNING[0m]: Test 'test.allianz_dv_snowflake.fk_ref_link_customer_product_h_product_pk___ref_hub_product___h_product_pk.ec54dcabfd' (models/dv/schema.yml) depends on a node named 'link_customer_product' in package '' which was not found
+[0m18:18:24  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118820dd0>]}
+[0m18:18:24  Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m18:18:24  Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m18:18:24  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0daf6e0e-60c1-41ae-8b7b-26d3732edc7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11859f310>]}
+[0m18:18:24  Found 8 models, 21 data tests, 3 sources, 584 macros
+[0m18:18:24  
+[0m18:18:24  Concurrency: 4 threads (target='dev')
+[0m18:18:24  
+[0m18:18:24  Acquiring new snowflake connection 'master'
+[0m18:18:24  Acquiring new snowflake connection 'list_ALLIANZ'
+[0m18:18:24  Acquiring new snowflake connection 'list_ALLIANZ'
+[0m18:18:24  Using snowflake connection "list_ALLIANZ"
+[0m18:18:24  Using snowflake connection "list_ALLIANZ"
+[0m18:18:24  On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m18:18:24  On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m18:18:24  Opening a new connection, currently in state init
+[0m18:18:24  Opening a new connection, currently in state init
+[0m18:18:25  SQL status: SUCCESS 5 in 0.345 seconds
+[0m18:18:25  On list_ALLIANZ: Close
+[0m18:18:25  SQL status: SUCCESS 5 in 0.454 seconds
+[0m18:18:25  On list_ALLIANZ: Close
+[0m18:18:25  Re-using an available connection from the pool (formerly list_ALLIANZ, now create_ALLIANZ_DV_DV)
+[0m18:18:25  Re-using an available connection from the pool (formerly list_ALLIANZ, now create_ALLIANZ_DV_STAGING)
+[0m18:18:25  Creating schema "database: "ALLIANZ"
+schema: "DV_DV"
+"
+[0m18:18:25  Creating schema "database: "ALLIANZ"
+schema: "DV_STAGING"
+"
+[0m18:18:25  Using snowflake connection "create_ALLIANZ_DV_DV"
+[0m18:18:25  Using snowflake connection "create_ALLIANZ_DV_STAGING"
+[0m18:18:25  On create_ALLIANZ_DV_DV: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "create_ALLIANZ_DV_DV"} */
+create schema if not exists ALLIANZ.DV_DV
+[0m18:18:25  On create_ALLIANZ_DV_STAGING: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "create_ALLIANZ_DV_STAGING"} */
+create schema if not exists ALLIANZ.DV_STAGING
+[0m18:18:25  Opening a new connection, currently in state closed
+[0m18:18:25  Opening a new connection, currently in state closed
+[0m18:18:25  Snowflake adapter: Snowflake query id: 01bf66ea-0000-69ee-0000-77790001f172
+[0m18:18:25  Snowflake adapter: Snowflake query id: 01bf66ea-0000-69ee-0000-77790001f176
+[0m18:18:25  Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'ALLIANZ'.
+[0m18:18:25  Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'ALLIANZ'.
+[0m18:18:25  Snowflake adapter: Error running SQL: macro create_schema
+[0m18:18:25  Snowflake adapter: Error running SQL: macro create_schema
+[0m18:18:25  Snowflake adapter: Rolling back transaction.
+[0m18:18:25  Snowflake adapter: Rolling back transaction.
+[0m18:18:25  On create_ALLIANZ_DV_DV: Close
+[0m18:18:25  On create_ALLIANZ_DV_STAGING: Close
+[0m18:18:25  Connection 'master' was properly closed.
+[0m18:18:25  Connection 'create_ALLIANZ_DV_DV' was properly closed.
+[0m18:18:25  Connection 'create_ALLIANZ_DV_STAGING' was properly closed.
+[0m18:18:25  
+[0m18:18:25  Finished running  in 0 hours 0 minutes and 1.09 seconds (1.09s).
+[0m18:18:25  Encountered an error:
+Database Error
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on database 'ALLIANZ'.
+[0m18:18:25  Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 2.1905801, "process_in_blocks": "0", "process_kernel_time": 0.224624, "process_mem_max_rss": "241745920", "process_out_blocks": "0", "process_user_time": 1.686616}
+[0m18:18:25  Command `dbt build` failed at 20:18:25.767323 after 2.19 seconds
+[0m18:18:25  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10751f150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107863e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102eac650>]}
+[0m18:18:25  Flushing usage events
+[0m18:18:26  An error was encountered while trying to flush usage events

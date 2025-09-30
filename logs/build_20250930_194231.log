@@ -1,0 +1,19 @@
+[0m17:42:31  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af63e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af68450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10afd4e10>]}
+[0m17:42:31  Running with dbt=1.10.13
+[0m17:42:31  running dbt with arguments {'cache_selected_only': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'empty': 'False', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'version_check': 'True', 'write_json': 'True', 'no_print': 'None', 'static_parser': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'use_experimental_parser': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'invocation_command': 'dbt build --debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'quiet': 'False', 'log_format': 'default', 'debug': 'True', 'partial_parse': 'True', 'printer_width': '80'}
+[0m17:42:32  Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8225e0e7-a75f-49a1-bf1e-caacc65c6703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119e5e9d0>]}
+[0m17:42:32  Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8225e0e7-a75f-49a1-bf1e-caacc65c6703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108197950>]}
+[0m17:42:32  Registered adapter: snowflake=1.8.4
+[0m17:42:32  checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m17:42:32  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:42:32  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8225e0e7-a75f-49a1-bf1e-caacc65c6703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f38d810>]}
+[0m17:42:32  Encountered an error:
+Compilation Error
+  non-default argument follows default argument
+    line 1
+      {% test fk_ref(model, column_name=None, fk_column=None, parent_model, pk_column) %}
+[0m17:42:32  Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.49326745, "process_in_blocks": "0", "process_kernel_time": 0.136339, "process_mem_max_rss": "201736192", "process_out_blocks": "0", "process_user_time": 0.851987}
+[0m17:42:32  Command `dbt build` failed at 19:42:32.339516 after 0.49 seconds
+[0m17:42:32  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b007e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a976d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10492ae10>]}
+[0m17:42:32  Flushing usage events
+[0m17:42:32  An error was encountered while trying to flush usage events

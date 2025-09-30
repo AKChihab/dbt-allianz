@@ -1,0 +1,30 @@
+[0m17:30:23  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113171350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131d76d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131e3f10>]}
+[0m17:30:23  Running with dbt=1.10.13
+[0m17:30:23  running dbt with arguments {'debug': 'True', 'partial_parse': 'True', 'introspect': 'True', 'static_parser': 'True', 'no_print': 'None', 'invocation_command': 'dbt build --debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'indirect_selection': 'eager', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'printer_width': '80', 'write_json': 'True', 'use_colors': 'True', 'target_path': 'None', 'warn_error': 'None', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'version_check': 'True', 'log_cache_events': 'False'}
+[0m17:30:23  Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b545a12-b227-489b-9db3-a383a430e58b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121bd7b90>]}
+[0m17:30:23  Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b545a12-b227-489b-9db3-a383a430e58b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11317db10>]}
+[0m17:30:23  Registered adapter: snowflake=1.8.4
+[0m17:30:23  checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m17:30:23  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:30:23  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6b545a12-b227-489b-9db3-a383a430e58b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12311f8d0>]}
+[0m17:30:24  [[33mWARNING[0m]: Did not find matching node for patch with name 'link_customer_product' in the 'models' section of file 'models/dv/schema.yml'
+[0m17:30:24  [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `fk_ref`. Arguments to generic tests should be
+nested under the `arguments` property.`
+[0m17:30:24  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6b545a12-b227-489b-9db3-a383a430e58b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1236b9390>]}
+[0m17:30:24  Encountered an error:
+Compilation Error in test fk_ref_link_customer_product_h_customer_pk__ref_hub_customer___h_customer_pk (models/dv/schema.yml)
+  macro 'dbt_macro__test_fk_ref' takes no keyword argument 'column_name'
+[0m17:30:24  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:30:24  Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.95883465, "process_in_blocks": "0", "process_kernel_time": 0.142889, "process_mem_max_rss": "214056960", "process_out_blocks": "0", "process_user_time": 1.302084}
+[0m17:30:24  Command `dbt build` failed at 19:30:24.400750 after 0.96 seconds
+[0m17:30:24  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131d6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1127fb510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12347b950>]}
+[0m17:30:24  Flushing usage events
+[0m17:30:24  An error was encountered while trying to flush usage events

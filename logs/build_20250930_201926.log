@@ -1,0 +1,76 @@
+[0m18:19:26  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11866be50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1186d7250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118671610>]}
+[0m18:19:26  Running with dbt=1.10.13
+[0m18:19:26  running dbt with arguments {'no_print': 'None', 'fail_fast': 'False', 'printer_width': '80', 'target_path': 'None', 'version_check': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'empty': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/logs', 'indirect_selection': 'eager', 'log_format': 'default', 'quiet': 'False', 'warn_error': 'None', 'debug': 'True', 'invocation_command': 'dbt build --debug --profiles-dir /Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'introspect': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/Datachain/Desktop/IAM/Github/dbt-allianz/profiles', 'use_experimental_parser': 'False'}
+[0m18:19:27  Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '92fb4e11-f4e7-4fee-9c3c-f76dce61bf85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d37a650>]}
+[0m18:19:27  Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '92fb4e11-f4e7-4fee-9c3c-f76dce61bf85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106327a90>]}
+[0m18:19:27  Registered adapter: snowflake=1.8.4
+[0m18:19:27  checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m18:19:27  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:19:27  Partial parsing enabled, no changes found, skipping parsing
+[0m18:19:27  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '92fb4e11-f4e7-4fee-9c3c-f76dce61bf85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f9f4f90>]}
+[0m18:19:27  Wrote artifact WritableManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/manifest.json
+[0m18:19:27  Wrote artifact SemanticManifest to /Users/Datachain/Desktop/IAM/Github/dbt-allianz/dbt/target/semantic_manifest.json
+[0m18:19:27  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '92fb4e11-f4e7-4fee-9c3c-f76dce61bf85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fe43fd0>]}
+[0m18:19:27  Found 8 models, 21 data tests, 3 sources, 584 macros
+[0m18:19:27  
+[0m18:19:27  Concurrency: 4 threads (target='dev')
+[0m18:19:27  
+[0m18:19:27  Acquiring new snowflake connection 'master'
+[0m18:19:27  Acquiring new snowflake connection 'list_ALLIANZ'
+[0m18:19:27  Acquiring new snowflake connection 'list_ALLIANZ'
+[0m18:19:27  Using snowflake connection "list_ALLIANZ"
+[0m18:19:27  Using snowflake connection "list_ALLIANZ"
+[0m18:19:27  On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m18:19:27  On list_ALLIANZ: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "list_ALLIANZ"} */
+show terse schemas in database ALLIANZ
+    limit 10000
+[0m18:19:27  Opening a new connection, currently in state init
+[0m18:19:27  Opening a new connection, currently in state init
+[0m18:19:27  SQL status: SUCCESS 5 in 0.327 seconds
+[0m18:19:27  On list_ALLIANZ: Close
+[0m18:19:27  SQL status: SUCCESS 5 in 0.494 seconds
+[0m18:19:27  On list_ALLIANZ: Close
+[0m18:19:28  Re-using an available connection from the pool (formerly list_ALLIANZ, now create_ALLIANZ_DV_STAGING)
+[0m18:19:28  Re-using an available connection from the pool (formerly list_ALLIANZ, now create_ALLIANZ_DV_DV)
+[0m18:19:28  Creating schema "database: "ALLIANZ"
+schema: "DV_STAGING"
+"
+[0m18:19:28  Creating schema "database: "ALLIANZ"
+schema: "DV_DV"
+"
+[0m18:19:28  Using snowflake connection "create_ALLIANZ_DV_STAGING"
+[0m18:19:28  Using snowflake connection "create_ALLIANZ_DV_DV"
+[0m18:19:28  On create_ALLIANZ_DV_STAGING: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "create_ALLIANZ_DV_STAGING"} */
+create schema if not exists ALLIANZ.DV_STAGING
+[0m18:19:28  On create_ALLIANZ_DV_DV: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "allianz_dv_snowflake", "target_name": "dev", "connection_name": "create_ALLIANZ_DV_DV"} */
+create schema if not exists ALLIANZ.DV_DV
+[0m18:19:28  Opening a new connection, currently in state closed
+[0m18:19:28  Opening a new connection, currently in state closed
+[0m18:19:28  Snowflake adapter: Snowflake query id: 01bf66eb-0000-69f2-0000-7779000200ce
+[0m18:19:28  Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'ALLIANZ'.
+[0m18:19:28  Snowflake adapter: Snowflake query id: 01bf66eb-0000-698f-0000-777900014246
+[0m18:19:28  Snowflake adapter: Error running SQL: macro create_schema
+[0m18:19:28  Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'ALLIANZ'.
+[0m18:19:28  Snowflake adapter: Rolling back transaction.
+[0m18:19:28  Snowflake adapter: Error running SQL: macro create_schema
+[0m18:19:28  On create_ALLIANZ_DV_STAGING: Close
+[0m18:19:28  Snowflake adapter: Rolling back transaction.
+[0m18:19:28  On create_ALLIANZ_DV_DV: Close
+[0m18:19:28  Connection 'master' was properly closed.
+[0m18:19:28  Connection 'create_ALLIANZ_DV_DV' was properly closed.
+[0m18:19:28  Connection 'create_ALLIANZ_DV_STAGING' was properly closed.
+[0m18:19:28  
+[0m18:19:28  Finished running  in 0 hours 0 minutes and 1.14 seconds (1.14s).
+[0m18:19:28  Encountered an error:
+Database Error
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on database 'ALLIANZ'.
+[0m18:19:28  Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 1.8036282, "process_in_blocks": "0", "process_kernel_time": 0.268108, "process_mem_max_rss": "241467392", "process_out_blocks": "0", "process_user_time": 1.28473}
+[0m18:19:28  Command `dbt build` failed at 20:19:28.614773 after 1.80 seconds
+[0m18:19:28  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118668050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12e653e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fe791d0>]}
+[0m18:19:28  Flushing usage events
+[0m18:19:28  An error was encountered while trying to flush usage events

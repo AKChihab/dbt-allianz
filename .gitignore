@@ -1,7 +1,7 @@
 # dbt build artifacts
 target/
 dbt_packages/
-logs/
+#logs/
 
 # Python
 .venv/
@@ -21,4 +21,4 @@ profiles/*.yml
 *.key
 .venv/
 
-#prez/
+prez/
