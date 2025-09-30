@@ -37,19 +37,29 @@ def run_sql_file(conn, path: Path):
     cur.close()
 
 def get_snowflake_connection():
- #   password = os.getenv("SF_PASSWORD")
- #   auth_kwargs = {"authenticator": "externalbrowser"} if not password else {"password": password}
-    conn = snowflake.connector.connect(
-        account=os.getenv("SF_ACCOUNT", required=True),
-        user=os.getenv("SF_USER", required=True),
+    # Prefer password auth for local dev if provided
+    if os.getenv("SF_PASSWORD"):
+        return snowflake.connector.connect(
+            user=os.environ["SF_USER"],
+            account=os.environ["SF_ACCOUNT"],      # frfstss-rc57380 (named account)
+            authenticator="snowflake",             # <— password auth
+            password=os.environ["SF_PASSWORD"],
+            role=os.getenv("SF_ROLE","DEV_ROLE"),
+            warehouse=os.getenv("SF_WAREHOUSE","COMPUTE_WH"),
+            database=os.getenv("SF_DATABASE","ALLIANZ"),
+            schema=os.getenv("SF_SCHEMA_RAW","RAW"),
+        )
+    # fallback (only if your account truly has SSO configured)
+    return snowflake.connector.connect(
+        user=os.environ["SF_USER"],
+        account=os.environ["SF_ACCOUNT"],
         authenticator="externalbrowser",
-        role=os.getenv("SF_ROLE", "DEV_ROLE"),
-        warehouse=os.getenv("SF_WAREHOUSE", "COMPUTE_WH"),
-        database=os.getenv("SF_DATABASE", "ALLIANZ"),
-        schema=os.getenv("SF_SCHEMA_RAW", "RAW"),
-        **auth_kwargs,
+        role=os.getenv("SF_ROLE","DEV_ROLE"),
+        warehouse=os.getenv("SF_WAREHOUSE","COMPUTE_WH"),
+        database=os.getenv("SF_DATABASE","ALLIANZ"),
+        schema=os.getenv("SF_SCHEMA_RAW","RAW"),
     )
-    return conn
+
 
 def load_df(conn, df: pd.DataFrame, table_name: str):
     if df.empty:
@@ -69,6 +79,12 @@ def load_df(conn, df: pd.DataFrame, table_name: str):
     print(f"[OK] Loaded {nrows} rows to RAW.{table_name} in {nchunks} chunk(s).")
     return nrows
 
+def show_preview(name, df, n, show_dtypes=False):
+    if n > 0:
+        print(f"\n[BQ] Preview {name} (n={min(n,len(df))}) — columns: {list(df.columns)}")
+        print(df.head(n).to_string(index=False))
+    if show_dtypes:
+        print(f"[BQ] Dtypes {name}:\n{df.dtypes.to_string()}")
 
 def main():
     ap = argparse.ArgumentParser(description="Ingest BigQuery public data into Snowflake RAW schema")
@@ -77,6 +93,8 @@ def main():
     ap.add_argument("--items-limit", type=int, default=20_000)
     ap.add_argument("--sql-dir", default="sql")
     ap.add_argument("--dry-run", action="store_true", help="Only query BigQuery and print counts")
+    #ap.add_argument("--preview-rows", type=int, default=5, help="Rows to print from each dataset (0=off)")
+    #ap.add_argument("--show-dtypes", action="store_true", help="Print pandas dtypes per dataset")
     args = ap.parse_args()
 
     sql_dir = Path(args.sql_dir)
@@ -87,14 +105,17 @@ def main():
     print(f"[BQ] Querying users (limit={args.users_limit}) ...")
     users = bq.query(read_sql(sql_dir/"bq/users.sql").format(limit=args.users_limit)).to_dataframe()
     print(f"[BQ] Users rows: {len(users)}")
+    #show_preview("USERS", users, args.preview_rows, args.show_dtypes)
 
     print(f"[BQ] Querying products (limit={args.products_limit}) ...")
     prods = bq.query(read_sql(sql_dir/"bq/products.sql").format(limit=args.products_limit)).to_dataframe()
     print(f"[BQ] Products rows: {len(prods)}")
+    #show_preview("PRODUCTS", prods, args.preview_rows, args.show_dtypes)
 
     print(f"[BQ] Querying order_items (limit={args.items_limit}) ...")
     items = bq.query(read_sql(sql_dir/"bq/order_items.sql").format(limit=args.items_limit)).to_dataframe()
     print(f"[BQ] Order items rows: {len(items)}")
+    #show_preview("ORDER_ITEMS", items, args.preview_rows, args.show_dtypes)
 
     if args.dry_run:
         print("[DRY RUN] Skipping Snowflake load.")
@@ -110,7 +131,7 @@ def main():
     print("[SF] Ensuring column order matches DDL")
     users = users[["user_id","first_name","last_name","email","created_at"]]
     prods = prods[["product_id","product_name","category","retail_price"]]
-    items = items[["order_item_id","order_id","customer_id","product_id","order_ts","sale_price","quantity"]]
+    items = items[["order_item_id","order_id","customer_id","product_id","order_ts","sale_price"]]
 
 
     print("[SF] Loading dataframes into RAW …")
