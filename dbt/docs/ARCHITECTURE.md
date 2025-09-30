@@ -9,7 +9,7 @@
 - **Source (BQ):** `bigquery-public-data.thelook_ecommerce`
   - `users`, `products`, `orders` + `order_items` (join done in extract)
 - **Landing (Snowflake RAW):**
-  - `ALLIANZ.RAW.CUSTOMERS`
+  - `ALLIANZ.RAW.USERS`
   - `ALLIANZ.RAW.PRODUCTS`
   - `ALLIANZ.RAW.ORDER_ITEMS`
 

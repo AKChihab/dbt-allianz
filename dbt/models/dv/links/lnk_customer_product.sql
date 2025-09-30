@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='incremental', unique_key=['l_customer_product_pk']) }}
 
 with c as (
 select h_customer_pk, customer_bk from {{ ref('hub_customer') }}
