@@ -31,10 +31,10 @@ setup_allianz.sql
 ### Environment (shell or .env)
 ```bash
 # Snowflake
-export SF_ACCOUNT="dv76312.europe-west3.gcp"   # use your exact identifier
-export SF_USER="DATACHAIN"
+export SF_ACCOUNT="<SF_ACCOUNT>"   # use your exact identifier
+export SF_USER="<SF_USER>"
 export SF_ROLE="DEV_ROLE"
-export SF_WAREHOUSE="COMPUTE_WH"
+export SF_WAREHOUSE="<SF_WAREHOUSE>" 
 export SF_DATABASE="ALLIANZ"
 export SF_SCHEMA="DV"
 # optional if using password auth
